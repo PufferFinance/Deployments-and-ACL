@@ -1,65 +1,15 @@
-# Puffer Protocol Access-Control List
 
 
-## Contracts and Functions
-
-|      Contract Name     	|                 Function                	| Role ID |         Actor         	|                   Address                  	|               Remarks           |                          Action Items             |
-|:-----------------------:	|:---------------------------------------:	|:-----------------:	|:---------------------:	|:------------------------------------------:	|:------------------------------- |:----------------------------------------------  |
-| PufferModuleManager     	| createNewRestakingOperator              	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callModifyOperatorDetails               	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callOptIntoSlashing                     	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callUpdateMetadataURI                   	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callUndelegate                          	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callDelegateTo                          	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| updateAVSRegistrationSignatureProof     	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callRegisterOperatorToAVS               	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callRegisterOperatorToAVSWithChurn      	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callDeregisterOperatorFromAVS           	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callUpdateOperatorAVSSocket             	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| callQueueWithdrawals                    	| 23    | Paymaster & Guardians| [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> Paymaster    |
-|                        	| callWithdrawNonBeaconChainETHBalanceWei 	| 23    | Paymaster            | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|       	                                             | Ops Multisig -> Paymaster    |
-|                        	| UpgradeableBeacon.upgradeTo               | 0    	| Timelock.sol         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                        |                              |
-| ValidatorTicket         	| setProtocolFeeRate                      	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                        	| setGuardiansFeeRate                     	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                	        | UUPSUpgradeable.upgradeToAndCall         	| 0    	| Timelock.sol         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                        |                      	    |
-| GuardianModule          	| setGuardianEnclaveMeasurements          	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| addGuardian                             	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| removeGuardian                          	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| setEjectionThreshold                    	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| setThreshold                            	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-| PufferProtocol          	| createPufferModule                      	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| setModuleWeights                        	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| setValidatorLimitPerModule              	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| changeMinimumVTAmount                   	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|                         	| setVTPenalty                            	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
-|               	        | UUPSUpgradeable.upgradeToAndCall        	| 0    	| Timelock.sol         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                        |                              |
-| EnclaveVerifier         	| removeLeafX509                          	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	| To be deprecated                                       |                              |
-| PufferVault             	| setDailyWithdrawalLimit                 	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
-|                        	| setExitFeeBasisPoints                   	| 77   	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
-|                        	| initiateETHWithdrawalsFromLido          	| 22  	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
-|                        	| claimWithdrawalsFromLido                	| 22  	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
-|                        	| claimWithdrawalFromEigenLayerM2         	| 22  	| Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
-|                        	| transferETH                             	| 1234  | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. provisionNode()          |                              |
-| PufferOracle            	| provisionNode                           	| 1234  | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. provisionNode()          |                              |
-|                       	| exitValidators                          	| 1234  | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. batchHandleWithdrawals() |                              |
-|                       	| setTotalNumberOfValidators              	| 23 	| Paymaster            |                                                                                                  	|                                                        |                              |
-|                       	| setMintPrice                            	| 22  	| Coordinator          |                                                                                                 	|                     	                                   | Ops Multisig -> new contract |
-
-
-
-
-
-## Roles
-
-| Role ID | Full Name                 | Description of the Role                                                   |
-|---------|---------------------------|---------------------------------------------------------------------------|
-| 0       | ADMIN_ROLE                | Administrative access for critical functions, typically held by Timelock. |
-| 22      | ROLE_ID_OPERATIONS_MULTISIG | Operations multisig, manages operational tasks and significant transactions. |
-| 23      | ROLE_ID_OPERATIONS_PAYMASTER | Responsible for managing payments and financial operations.              |
-| 77      | ROLE_ID_DAO               | DAO-related responsibilities, governance and decision-making roles.      |
-| 1234    | ROLE_ID_PUFFER_PROTOCOL   | Specific to the Puffer Protocol, handles protocol-specific operations.   |
-
-
+Table of Contents
+----
+- [Latest Deployments](#latest-deployments)
+  - [Mainnet](#mainnet)
+  - [Holesky](#holesky)
+  - [Scroll](#scroll)
+- [Puffer Protocol Access-Control List](#puffer-protocol-access-control-list)
+  - [Actors](#actors)
+  - [Roles](#roles)
+  - [Contracts and Functions](#contracts-and-functions)
 
 # Latest Deployments
 
@@ -69,6 +19,7 @@
 | ------------------------------- | ----- | -------------- |
 | PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x7C93eDab7326E5Ff8d5B89B13e3681216Ab409B6](https://etherscan.io/address/0x7C93eDab7326E5Ff8d5B89B13e3681216Ab409B6) |
 | PufferDepositor                 | [0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff](https://etherscan.io/address/0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff) | [0x55F4d6Acf015c878A88C8CD08a9D74ea0d40a304](https://etherscan.io/address/0x55F4d6Acf015c878A88C8CD08a9D74ea0d40a304) |
+| Timelock                        | - | [0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) |
 | EnclaveVerifier                 | - | [0x5D94174199a630A8396E749ea31d80Edf84ecF16](https://etherscan.io/address/0x5D94174199a630A8396E749ea31d80Edf84ecF16) |
 | GuardianModule                  | - | [0xa95aa41bBa980Eb7a80e7bfF4F6218244C723f57](https://etherscan.io/address/0xa95aa41bBa980Eb7a80e7bfF4F6218244C723f57) |
 | ModuleManager                   | [0x58b56FE5ACA76DD630f48091f9d817BDA964c302](https://etherscan.io/address/0x58b56FE5ACA76DD630f48091f9d817BDA964c302) | [0xF00ed0c05F399AcE32618E64D40E6f78d3220aCA](https://etherscan.io/address/0xF00ed0c05F399AcE32618E64D40E6f78d3220aCA) |
@@ -100,3 +51,113 @@
 | ----------------------------- | ----- | -------------- |
 | PufferVault (PufETH)          | [0xc4d46E8402F476F269c379677C99F18E22Ea030e](https://scroll.etherscan.io/address/0xc4d46E8402F476F269c379677C99F18E22Ea030e) | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://scroll.etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |
 | Gateway                       | [0x9eBf2f33526CD571f8b2ad312492cb650870CFd6](https://scroll.etherscan.io/address/0x9eBf2f33526CD571f8b2ad312492cb650870CFd6) | [0xCd19E32F4f6F4c8D10A416c0397297169E93b464](https://scroll.etherscan.io/address/0xCd19E32F4f6F4c8D10A416c0397297169E93b464) |
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+# Puffer Protocol Access-Control List
+
+## Actors
+
+| Role                           	| Role ID 	| Actors                                             	| Requirement           	| Remarks                                                                                                    |
+| :-----------------------------:	| :-------:	| :--------------------------------------------------	| :---------------------	| :--------------------------------------------------------------------------------------------------------- |
+| ADMIN_ROLE                     	| 0       	| Timelock.sol                                       	|                       	|                                                                                                            |
+| ROLE_ID_UPGRADER               	| 1       	| - Community Multisig - Ops Multisig (7 days delay) 	|                       	|                                                                                                            |
+| ROLE_ID_OPERATIONS_PAYMASTER   	| 23      	| Paymaster                                          	| - EOA                 	| This role covers the gas costs but should not be relied on as the sole defense.                            |
+| ROLE_ID_OPERATIONS_COORDINATOR 	| 24      	| Ops multisig until we replace with a contract      	| - Multisig - Contract 	| This role is for calling setMintPrice and will be the Ops multisig until we can replace it with a contract |
+| ROLE_ID_PUFFER_PROTOCOL        	| 1234    	| PufferProtocol.sol                                 	|                       	| This role is to restrict function calls so that only the PufferProtocol functions can call them            |
+| ROLE_ID_DAO                    	| 77      	| Ops multisig until we have governance              	|                       	|                                                                                                            |
+| ROLE_ID_OPERATIONS_MULTISIG    	| 22      	| Ops multisig                                       	|                       	|                                                                                                            |
+| ROLE_ID_GUARDIANS              	| 88      	| — unused rn                                        	|                       	|                                                                                                            |
+| PUBLIC_ROLE                    	| max_int 	|                                                    	|                       	|                                                                                                            |
+
+## Roles
+
+| Role ID |           Full Title        |                    Description of the Role                                   |
+| :-----: | :-------------------------: | :--------------------------------------------------------------------------- |
+| 0       | ADMIN_ROLE                  | Administrative access for upgradability, only held by Timelock.              |
+| 22      | ROLE_ID_OPERATIONS_MULTISIG | Operations multisig, manages operational tasks and transactions.             |
+| 23      | ROLE_ID_OPERATIONS_PAYMASTER| Responsible for managing functional transactions and pay the operational gas.|
+| 77      | ROLE_ID_DAO                 | DAOs role which after formation will control the protocol                    |
+| 1234    | ROLE_ID_PUFFER_PROTOCOL     | Main Puffer Protocol contract                                                |
+| max_int | PUBLIC_ROLE                 | Public role for public functions                                             |   
+
+
+## Contracts and Functions
+
+|      Contract Name     	|                 Function                	| Role ID |         Actor        |                                                  Address                                      	|                           Remarks                      |          Action Items        |
+|:-----------------------:	|:---------------------------------------:	|:-------:|:-------------------: |:----------------------------------------------------------------------------------------------:	|:------------------------------------------------------ |:---------------------------  |
+| PufferModuleManager     	| createNewRestakingOperator              	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callModifyOperatorDetails               	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callOptIntoSlashing                     	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callUpdateMetadataURI                   	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callUndelegate                          	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callDelegateTo                          	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| updateAVSRegistrationSignatureProof     	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callRegisterOperatorToAVS               	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callRegisterOperatorToAVSWithChurn      	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callDeregisterOperatorFromAVS           	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callUpdateOperatorAVSSocket             	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| callQueueWithdrawals                    	| 23      | Paymaster & Guardians| [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> Paymaster    |
+|                        	| callWithdrawNonBeaconChainETH BalanceWei 	| 23      | Paymaster            | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|       	                                             | Ops Multisig -> Paymaster    |
+|                        	| callVerifyWithdrawalCredentials           | max_int |                      |                                                                                               	|                                                      	 |                             	|
+|                        	| callVerifyAndProcessWithdrawals           | max_int |Paymaster & Guardians | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 | Paymaster -> Public          |
+|                        	| callCompleteQueuedWithdrawals             | max_int |                      |                                                                                               	|                                                        |                            	|
+|                        	| callVerifyAndProcessWithdrawals           | max_int |                      |                                                                                               	|                                                        |                            	|
+|                        	| UpgradeableBeacon.upgradeTo               | 0       | Timelock.sol         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                        |                              |
+| ValidatorTicket         	| setProtocolFeeRate                      	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| setGuardiansFeeRate                     	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                        	| purchaseValidatorTicket               	| max_int |                      |                                                                                                	|                                                        |                             	|
+|                        	| burn                                  	| max_int |                      |                                                                                                	|                                                        |                             	|
+|                	        | UUPSUpgradeable.upgradeToAndCall         	| 0       | Timelock.sol         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                        |                      	    |
+| GuardianModule          	| setGuardianEnclaveMeasurements          	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| addGuardian                             	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| removeGuardian                          	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| setEjectionThreshold                    	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| setThreshold                            	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+| PufferProtocol          	| createPufferModule                      	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| setModuleWeights                        	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| setValidatorLimitPerModule              	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| changeMinimumVTAmount                   	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| setVTPenalty                            	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+|                         	| provisionNode                         	| 23 	  | Paymaster & Guardians|                                                                                                	|                                                        |                              |
+|                         	| skipProvisioning                      	| 23 	  | Paymaster & Guardians|                                                                                                	|                                                        |                              |
+|                         	| batchHandleWithdrawals                	| 23 	  | Paymaster & Guardians|                                                                                                	|                                                        |                              |
+|                         	| registerValidatorKey                  	| max_int | Public               |                                                                                                	|                                                        |                            	|
+|                         	| depositValidatorTickets               	| max_int | Public               |                                                                                                	|                                                        |                             	|
+|                         	| withdrawValidatorTickets              	| max_int | Public               |                                                                                                	|                                                        |                             	|
+|                         	| revertIfPaused                        	| max_int | Public               |                                                                                                	|                                                        |                             	|
+|               	        | UUPSUpgradeable.upgradeToAndCall        	| 0       | Timelock.sol         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                        |                              |
+| EnclaveVerifier         	| removeLeafX509                          	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	| To be deprecated                                       |                              |
+| PufferVault             	| setDailyWithdrawalLimit                 	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
+|                        	| setExitFeeBasisPoints                   	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
+|                        	| initiateETHWithdrawalsFromLido          	| 22      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
+|                        	| claimWithdrawalsFromLido                	| 22      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
+|                        	| claimWithdrawalFromEigenLayerM2         	| 22      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
+|                        	| transferETH                             	| 1234    | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. provisionNode()         |                              |
+|                        	| initiateETHWithdrawalsFromLido        	| 22      | Ops Multisig         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 |                             	|
+|                        	| claimWithdrawalsFromLido              	| 22      | Ops Multisig         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 |                             	|
+|                        	| claimWithdrawalFromEigenLayerM2       	| 22      | Ops Multisig         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 |                             	|
+|                        	| burn                                  	| max_int |                      |                                                                                                  |                                                   	 |                             	|
+|                        	| depositToEigenLayer                   	| 22      | Ops Multisig         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 |                             	|
+|                        	| initiateETHWithdrawalsFromLido        	| 22  	  | Ops Multisig         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 |                             	|
+|                        	| initiateStETHWithdrawalFromEigenLayer 	| 22  	  | Ops Multisig         | [0x3C28B7c...f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) 	|                                                   	 |                             	|
+|                        	| PufferVault                           	| max_int |                      |                                                                                                	|                                                   	 |                             	|
+|                        	| withdraw                              	| max_int |                      |                                                                                                	|                                                   	 |                             	|
+|                        	| redeem                                	| max_int |                      |                                                                                                	|                                                   	 |                             	|
+|                        	| depositStETH                          	| max_int |                      |                                                                                                	|                                                   	 |                             	|
+|                        	| depositWstETH                         	| max_int |                      |                                                                                                	|                                                   	 |                             	|
+| PufferOracle            	| provisionNode                           	| 1234    | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. provisionNode()         |                              |
+|                       	| exitValidators                          	| 1234    | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. batchHandleWithdrawals()|                              |
+|                       	| setTotalNumberOfValidators              	| 23 	  | Paymaster            |                                                                                                  |                                                        |                              |
+|                       	| setMintPrice                            	| 22      | Coordinator          |                                                                                                 	|                     	                                 | Ops Multisig -> new contract |
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
