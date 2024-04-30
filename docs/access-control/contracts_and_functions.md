@@ -114,11 +114,11 @@
 | provisionNode                           	| 1234    | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. provisionNode()         |                              |
 | exitValidators                          	| 1234    | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	| Initiated from PufferProtocol. batchHandleWithdrawals()|                              |
 | setTotalNumberOfValidators              	| 22 	  | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        |                              |
-| setMintPrice                            	| 22      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> Coordinator  |
+| setMintPrice                            	| 24      | Ops Coordinator      |   |   |
 
 ## AccessManager
 
 |                 Function                	| Role ID |         Actor        |                                                  Address                                       	|                           Remarks                      |          Action Items        |
 |:---------------------------------------:	|:-------:|:-------------------: |:----------------------------------------------------------------------------------------------:	|:------------------------------------------------------ |:---------------------------  |
-| grantRole                                	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|                                                        | Ops Multisig -> DAO          |
+| grantRole                                	| 77      | Ops Multisig         | [0xC0896ab...955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) 	|  Has 7 days delay                                      | Ops Multisig -> DAO          |
 | grantRole                                 | 1234    | PufferProtocol       | [0x716B75d...e84604E](https://etherscan.io/address/0x716B75d22B5e5f5cCa2C7229F6df79DEEe84604E) 	|                                                        |                              |
