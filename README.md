@@ -12,6 +12,7 @@ This document provides lists of the latest deployments of the Puffer Protocol co
 - [Access Control](docs/access-control/) - Access control details for various contracts.
   - [Actors and Roles](docs/access-control/actors_and_roles.md) - Description of roles and permissions within the system.
   - [Contracts and Functions](docs/access-control/contracts_and_functions.md) - Description of contracts, functions and their associated roles within the system.
+  - [Function Selectors](docs/access-control/function_selectors.md) - List of function selectors/signatures in the contracts.
 
 
 - [logs](logs/) - Logs of various activities and transactions.

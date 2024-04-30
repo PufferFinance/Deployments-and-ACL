@@ -4,12 +4,11 @@ import sys
 
 def convert_to_markdown(input_file, output_file):
     try:
-        # Read the transaction data from the JSON file
         with open(input_file, 'r') as file:
             data = json.load(file)
         
         transactions = data.get('result', [])
-        markdown_lines = ["# Transaction Report\n"]
+        markdown_lines = ["# Onchain Transaction Report\n"]
 
         for tx in transactions:
             markdown_lines.append(f"## Transaction Hash: {tx['hash']}")
@@ -19,13 +18,11 @@ def convert_to_markdown(input_file, output_file):
             markdown_lines.append(f"- **Value**: {tx['value']} wei")
             markdown_lines.append(f"- **Confirmations**: {tx['confirmations']}\n")
 
-        # Writing the markdown data to a file
         with open(output_file, 'w') as file:
             file.write("\n".join(markdown_lines))
         print("Markdown file created successfully.")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

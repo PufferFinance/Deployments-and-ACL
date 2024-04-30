@@ -1,14 +1,14 @@
-name: Fetch Etherscan Data and Update Documentation
+name: Process Onchain Data and Create Issue
 
-# TODO: Uncomment the following line to enable the workflow scheduling
-# TODO: Update the etherscan script for appropriate data fetching
-# on:
-#   schedule:
-#     # Runs at 05:00 UTC every day
-#     - cron: '0 5 * * *'
+on:
+  repository_dispatch:
+    types: [onchain-event]
+
+# https://api.github.com/repos/PufferFinance/Deployments-and-ACL/dispatches
+
 
 jobs:
-  fetch_and_update:
+  process_and_notify:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -23,40 +23,20 @@ jobs:
       run: |
         pip install requests
 
-    - name: Fetch data from Etherscan
+    - name: Fetch data from API using webhook data
       env:
-        ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
-        # ETH_ADDRESS: ${{ secrets.ETH_ADDRESS }}
+        PAYLOAD: ${{ github.event.payload }}
+        # ETH_ADDRESS: ${{ github.event.client_payload.eth_address }}
       run: |
-        python ./scripts/fetch_etherscan_data.py $ETHERSCAN_API_KEY logs/transactions.json
+        python ./scripts/fetch_data.py $PAYLOAD transactions.json
 
     - name: Convert data to Markdown
       run: |
-        python ./scripts/convert_to_markdown.py logs/transactions.json logs/transactions.md
+        python ./scripts/convert_to_markdown.py transactions.json issue_content.md
 
-    - name: Create new branch for update
-      run: |
-        DATE=`date +'%Y-%m-%d-%H-%M'`
-        git checkout -b etherscan-update-$DATE
-        git config user.name 'github-actions'
-        git config user.email 'github-actions@github.com'
-
-    - name: Add changes to Git
-      run: |
-        git add logs/transactions.md
-        git commit -m "Update Etherscan data on ${{ github.run_id }}"
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Create GitHub Issue from Markdown File
+      uses: peter-evans/create-issue-from-file@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: etherscan-update-${{ github.run_id }}
-
-    - name: Create Pull Request
-      uses: repo-sync/pull-request@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        source_branch: "etherscan-update-$DATE"
-        destination_branch: "main"
-        pr_title: "Automated Etherscan Data Update on $DATE"
-        pr_body: "This is an automated pull request to update from branch etherscan-update-$DATE"
+        title: "Onchain Update on $(date +'%Y-%m-%d %H:%M:%S')"
+        content-filepath: ./issue_content.md
+        labels: onchain update
