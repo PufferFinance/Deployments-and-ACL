@@ -1,0 +1,42 @@
+name: Process Onchain Data and Create Issue
+
+on:
+  repository_dispatch:
+    types: [onchain-event]
+
+# https://api.github.com/repos/PufferFinance/Deployments-and-ACL/dispatches
+
+
+jobs:
+  process_and_notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Python dependencies
+      run: |
+        pip install requests
+
+    - name: Fetch data from API using webhook data
+      env:
+        PAYLOAD: ${{ github.event.payload }}
+        # ETH_ADDRESS: ${{ github.event.client_payload.eth_address }}
+      run: |
+        python ./scripts/fetch_data.py $PAYLOAD transactions.json
+
+    - name: Convert data to Markdown
+      run: |
+        python ./scripts/convert_to_markdown.py transactions.json issue_content.md
+
+    - name: Create GitHub Issue from Markdown File
+      uses: peter-evans/create-issue-from-file@v3
+      with:
+        title: "Onchain Update on $(date +'%Y-%m-%d %H:%M:%S')"
+        content-filepath: ./issue_content.md
+        labels: onchain update
