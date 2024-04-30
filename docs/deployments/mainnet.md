@@ -15,4 +15,5 @@
 | RestakingOperatorBeacon         | [0x6756B856Dd3843C84249a6A31850cB56dB824c4B](https://etherscan.io/address/0x6756B856Dd3843C84249a6A31850cB56dB824c4B) | - |
 | RestakingOperator               | - | [0xa1779844E51f40cB703C775B0c3cca410a72Ea47](https://etherscan.io/address/0xa1779844E51f40cB703C775B0c3cca410a72Ea47) |
 | ValidatorTicket                 | [0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A](https://etherscan.io/address/0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A) | [0xD88F8315F6c8883f450e5E33e114e880e1BaB56F](https://etherscan.io/address/0xD88F8315F6c8883f450e5E33e114e880e1BaB56F) |
-| L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |                                                                                                                       | 
+| OperationsCoordinator           | - | [0xe6d798165A32F37927AF20D7Ccb1f80fB731a3C0](https://etherscan.io/address/0xe6d798165A32F37927AF20D7Ccb1f80fB731a3C0) | 
+| L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |      | 
