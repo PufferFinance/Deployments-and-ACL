@@ -9,6 +9,21 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Holesky](docs/deployments/holesky.md)
   - [Scroll](docs/deployments/scroll.md)
 
+- [ABIs](docs/abis/) - ABIs of deployed smart contracts
+  - [PufferVault](docs/abis/PufferVault.json)
+  - [PufferDepositor](docs/abis/PufferDepositor.json)
+  - [PufferProtocol](docs/abis/PufferProtocol.json)
+  - [OperationsCoordinator](docs/abis/OperationsCoordinator.json)
+  - [GuardianModule](docs/abis/GuardianModule.json)
+  - [PufferModuleManager](docs/abis/PufferModuleManager.json)
+  - [PufferModule](docs/abis/PufferModule.json)
+  - [PufferOracle](docs/abis/PufferOracle.json)
+  - [RestakingOperator](docs/abis/RestakingOperator.json)
+  - [ValidatorTicket](docs/abis/ValidatorTicket.json)
+  - [EnclaveVerifier](docs/abis/EnclaveVerifier.json)
+  - [Timelock](docs/abis/Timelock.json)
+
+
 - [Access Control](docs/access-control/) - Access control details for various contracts.
   - [Actors and Roles](docs/access-control/actors_and_roles.md) - Description of roles and permissions within the system.
   - [Contracts and Functions](docs/access-control/contracts_and_functions.md) - Description of contracts, functions and their associated roles within the system.
