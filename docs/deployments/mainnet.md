@@ -17,3 +17,13 @@
 | ValidatorTicket                 | [0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A](https://etherscan.io/address/0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A) | [0xD88F8315F6c8883f450e5E33e114e880e1BaB56F](https://etherscan.io/address/0xD88F8315F6c8883f450e5E33e114e880e1BaB56F) |
 | OperationsCoordinator           | - | [0xe6d798165A32F37927AF20D7Ccb1f80fB731a3C0](https://etherscan.io/address/0xe6d798165A32F37927AF20D7Ccb1f80fB731a3C0) | 
 | L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |      | 
+
+
+
+
+## Multisigs
+| Name                            | Address |
+| ------------------------------- | -------------- |
+| Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) |
+| Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) |
+| Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) |
