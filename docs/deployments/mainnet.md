@@ -5,10 +5,11 @@
 | PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x976061D4067476d93f77444827FA7c1717881398](https://etherscan.io/address/0x976061D4067476d93f77444827FA7c1717881398) |
 | PufferDepositor                 | [0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff](https://etherscan.io/address/0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff) | [0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b](https://etherscan.io/address/0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b) |
 | Timelock                        | - | [0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) |
+| AccessManager                   | - | [0x8c1686069474410E6243425f4a10177a94EBEE11](https://etherscan.io/address/0x8c1686069474410E6243425f4a10177a94EBEE11) |
 | EnclaveVerifier                 | - | [0x1d03e4bCC928795B1EEac1205fa9dDC4a3241D95](https://etherscan.io/address/0x1d03e4bCC928795B1EEac1205fa9dDC4a3241D95) |
 | GuardianModule                  | - | [0x628b183F248a142A598AA2dcCCD6f7E480a7CcF2](https://etherscan.io/address/0x628b183F248a142A598AA2dcCCD6f7E480a7CcF2) |
-| ModuleManager                   | [0x9E1E4fCb49931df5743e659ad910d331735C3860](https://etherscan.io/address/0x9E1E4fCb49931df5743e659ad910d331735C3860) | [0x7579EbE17A5C4522cc7790da600b04efC9EBD1a2](https://etherscan.io/address/0x7579EbE17A5C4522cc7790da600b04efC9EBD1a2) |
-| Oracle                          | - | [0x8eFd1Dc43AD073232F3e2924e22F173879119489](https://etherscan.io/address/0x8eFd1Dc43AD073232F3e2924e22F173879119489) |
+| PufferModuleManager             | [0x9E1E4fCb49931df5743e659ad910d331735C3860](https://etherscan.io/address/0x9E1E4fCb49931df5743e659ad910d331735C3860) | [0x7579EbE17A5C4522cc7790da600b04efC9EBD1a2](https://etherscan.io/address/0x7579EbE17A5C4522cc7790da600b04efC9EBD1a2) |
+| PufferOracle                    | - | [0x8eFd1Dc43AD073232F3e2924e22F173879119489](https://etherscan.io/address/0x8eFd1Dc43AD073232F3e2924e22F173879119489) |
 | PufferModuleBeacon              | [0xdd38A5a7789C74fc7F64556fc772343658EEBb04](https://etherscan.io/address/0xdd38A5a7789C74fc7F64556fc772343658EEBb04) | - |
 | PufferModule                    | - | [0x7f9eb5982388a4683CcAB27A50207CB9e76c2FCC](https://etherscan.io/address/0x7f9eb5982388a4683CcAB27A50207CB9e76c2FCC) |
 | PufferProtocol                  | [0xf7b6B32492c2e13799D921E84202450131bd238B](https://etherscan.io/address/0xf7b6B32492c2e13799D921E84202450131bd238B) | [0xDEb6E7eD2B0E6b8f8BE7fb3603BbC2807E478b5D](https://etherscan.io/address/0xDEb6E7eD2B0E6b8f8BE7fb3603BbC2807E478b5D) |
