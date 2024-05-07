@@ -28,3 +28,12 @@
 | Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) |
 | Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) |
 | Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) |
+
+
+
+
+## External Actors
+| Name                     | Role                         | Address | 
+| -------------------------| ---------------------------- | -------------- |
+| Paymaster                | ROLE_ID_OPERATIONS_PAYMASTER | [0x65d2dd7A66a2733a36559fE900A236280A05FBD6](https://etherscan.io/address/0x65d2dd7A66a2733a36559fE900A236280A05FBD6) |
+| Guardian 1               |                              | [0x65d2dd7A66a2733a36559fE900A236280A05FBD6](https://etherscan.io/address/0x65d2dd7A66a2733a36559fE900A236280A05FBD6) |
