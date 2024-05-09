@@ -15,4 +15,5 @@
 | PufferOracle                  | - | [0xEf93AA29F627465A7f58A1F25980c90116f27b74](https://holesky.etherscan.io/address/0xEf93AA29F627465A7f58A1F25980c90116f27b74) |
 | RestakingOperatorBeacon       | [0xa7DC88c059F57ADcE41070cEfEFd31F74649a261](https://holesky.etherscan.io/address/0xa7DC88c059F57ADcE41070cEfEFd31F74649a261) | - |
 | RestakingOperator             | - | [0x89fE1Ab8A0f74494Bf3Fc0f238d40799BA360fA5](https://holesky.etherscan.io/address/0x89fE1Ab8A0f74494Bf3Fc0f238d40799BA360fA5) |
+| OperationsCoordinator             | - | [0x421D3C1f05CBb145B9E10d2FdEBa79Bc4648919b](https://holesky.etherscan.io/address/0x421D3C1f05CBb145B9E10d2FdEBa79Bc4648919b) |
 
