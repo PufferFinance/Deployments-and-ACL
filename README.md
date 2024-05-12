@@ -30,6 +30,7 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Function Selectors](docs/access-control/functionSelectors.md) - List of function selectors/signatures in the contracts.
 
 
+- [Reports](docs/reports/) - Published reports of the upgrades and processes.
 - [logs](logs/) - Logs of various activities and transactions.
   - [Transaction Reports](logs/transactions.md) - Automated reports of transactions fetched and formatted.
 
