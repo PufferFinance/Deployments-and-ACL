@@ -148,7 +148,7 @@ Given that this commit was added after the holesky deployment used for staging, 
         - _epochNumber = 268828
         - _totalNumberOfValidators = 927122
         - _numberOfActivePufferValidators = 174 
-        - _setMintPrice([3098470956104156](https://etherscan.io/unitconverter?wei=3098470956104156)) //latest
+        - _setMintPrice([3098470956104156](https://etherscan.io/unitconverter?wei=3098470956104156)) (latest value)
 
 The following contracts need to be updated since the `PufferOracleV2` address is an immutable variable set in the constructor:
 
