@@ -23,7 +23,7 @@
 - 1:23 am - War room began to check if pausing the contracts is needed
     - BlockSec and Creed auditors were contacted
 - 1:45 am - Verified that all the funds are safe and the latest provisioned validators are using the correct protocol controlled withdrawal addresses.
-- 2:25 am - The issue was found to be the underflow in the `PufferOracle.getLockedEthAmount()`, introduced in a storage optimization code change, which now is resulting in the totalAsset call failure
+- 2:25 am - The issue was found to be the overflow in the `PufferOracle.getLockedEthAmount()`, introduced in a storage optimization code change, which now is resulting in the totalAsset call failure
   - after the number of active validators exceeded 147
   - TLdr; `148 * 32 ether > uint64.max`, results in an overflow in the calculations
 - 2:35 am - Pausing provisioning the validators on the backend
@@ -147,7 +147,7 @@ Given that this commit was added after the holesky deployment used for staging, 
     - Import the current Oracle variables as constructor variables for the new contract
         - _epochNumber = 268828
         - _totalNumberOfValidators = 927122
-        - _numberOfActivePufferValidators = 174 //Double check before deployment
+        - _numberOfActivePufferValidators = 174 
         - _setMintPrice([3098470956104156](https://etherscan.io/unitconverter?wei=3098470956104156)) //latest
 
 The following contracts need to be updated since the `PufferOracleV2` address is an immutable variable set in the constructor:
@@ -156,7 +156,7 @@ The following contracts need to be updated since the `PufferOracleV2` address is
     - Only swap the PufferOracleV2 address in the constructor
 - new **ValidatorTicket** implementation
     - Only swap the PufferOracleV2 address in the constructor
-- new **OperationCoordinator**
+- new **OperationsCoordinator**
     - Only swap the PufferOracleV2 address in the constructor
 - new **PufferProtocol implementation**
     - Only swap the PufferOracleV2 address in the constructor
@@ -178,11 +178,10 @@ The following contracts need to be updated since the `PufferOracleV2` address is
 
 ## Assign roles
 
-https://github.com/PufferFinance/Deployments-and-ACL/blob/main/docs/access-control/contracts_and_functions.md
+Review and assign the roles for the new contracts based on the [access control list](https://github.com/PufferFinance/Deployments-and-ACL/blob/main/docs/access-control/contracts_and_functions.md):
 
-- _setupCoordinatorAccess()
-- _setupPufferOracleAccess()
-  - https://etherscan.io/tx/0x1ab1104144b0b16accce69a0b904f05016d07fe00bdf5d2544a6955f114cb826
+PR: https://github.com/PufferFinance/PufferPool/pull/256/files#diff-def9abd5a0cdfd2155de31c55c9fb8f6698878c70327d06762d76cd2662e9f9f
+Transaction: https://etherscan.io/tx/0x1ab1104144b0b16accce69a0b904f05016d07fe00bdf5d2544a6955f114cb826
 
 ---
 
