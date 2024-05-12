@@ -18,7 +18,7 @@
 # Timeline 
 ## Friday, May 11, 2024
 
-- 1:02 am - Initial issue was raised as the `totalAssets` was returning 0 on Puffer Vault
+- 1:02 am (EST) - Initial issue was raised as the `totalAssets` was returning 0 on Puffer Vault
     - Impact: totalAssets value is required to calculate the pufETH/ETH conversion ratio ("price"). This issue has resulted in some DeFi integrations being implicitly paused, as the view calls would revert internally
 - 1:23 am - War room began to check if pausing the contracts is needed
     - BlockSec and Creed auditors were contacted
@@ -180,8 +180,8 @@ The following contracts need to be updated since the `PufferOracleV2` address is
 
 Review and assign the roles for the new contracts based on the [access control list](https://github.com/PufferFinance/Deployments-and-ACL/blob/main/docs/access-control/contracts_and_functions.md):
 
-PR: https://github.com/PufferFinance/PufferPool/pull/256/files#diff-def9abd5a0cdfd2155de31c55c9fb8f6698878c70327d06762d76cd2662e9f9f
-Transaction: https://etherscan.io/tx/0x1ab1104144b0b16accce69a0b904f05016d07fe00bdf5d2544a6955f114cb826
+- PR: https://github.com/PufferFinance/PufferPool/pull/256/files#diff-def9abd5a0cdfd2155de31c55c9fb8f6698878c70327d06762d76cd2662e9f9f
+- Transaction: https://etherscan.io/tx/0x1ab1104144b0b16accce69a0b904f05016d07fe00bdf5d2544a6955f114cb826
 
 ---
 
@@ -193,10 +193,10 @@ Transaction: https://etherscan.io/tx/0x1ab1104144b0b16accce69a0b904f05016d07fe00
     
     The process:Run `DeployOracleFix` and Update Oracle addressi n `UpgradePufETHOnMainnet` and run the scriptFrom community multisig to generate the call data for multisig:Call to timelock
     
-    - executeCall(accessManager, console logged calldata)
-    - executeCall(vault) abi-enecoded (upgradeToAndCall(newImpl, “”))
-    - executeCall(vt) abi-enecoded (upgradeToAndCall(newImpl, “”))
-    - executeCall(protocol) abi-enecoded (upgradeToAndCall(newImpl, “”))
+    - `executeCall(accessManager, console logged calldata)`
+    - `executeCall(vault) abi-enecoded (upgradeToAndCall(newImpl, “”))`
+    - `executeCall(vt) abi-enecoded (upgradeToAndCall(newImpl, “”))`
+    - `executeCall(protocol) abi-enecoded (upgradeToAndCall(newImpl, “”))`
 
 - Community multisig to bypass the 7 day operation delay
 - Transaction: https://etherscan.io/tx/0x44d182b89c21811624a2626ac7b9b8d4d1f4ecccd95dedac0cf2dfd828143b53
