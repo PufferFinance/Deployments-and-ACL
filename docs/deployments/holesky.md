@@ -1,5 +1,31 @@
 # Holesky Deployments
 
+## V2
+
+| Name                          | Proxy | Implementation |
+| ----------------------------- | ----- | -------------- |
+| PufferVault (pufETH)          | [0x341446CF7E75a7FEDe78152678F5b8c2BF49b187](https://holesky.etherscan.io/address/0x341446CF7E75a7FEDe78152678F5b8c2BF49b187) | [0x436ca63034E8121d24B6F569F473Fd45c9BB7D59](https://holesky.etherscan.io/address/0x436ca63034E8121d24B6F569F473Fd45c9BB7D59) |
+| PufferDepositor               | [0x78dD31687c291de221DE6bc96868C9DE4118d167](https://holesky.etherscan.io/address/0x78dD31687c291de221DE6bc96868C9DE4118d167) | [0xa5A10e740ead331bA5Bc536d6521A2B433a2B4Fd](https://holesky.etherscan.io/address/0xa5A10e740ead331bA5Bc536d6521A2B433a2B4Fd) |
+| AccessManager                 | - | [0x677B78346936B90e17F1e45c915Fe24Be6edb632](https://holesky.etherscan.io/address/0x677B78346936B90e17F1e45c915Fe24Be6edb632) |
+| GuardianModule                | - | [0x645a2B58964013858d029b9b4836771e017a7350](https://holesky.etherscan.io/address/0x645a2B58964013858d029b9b4836771e017a7350) |
+| ValidatorTicket               | [0x546D42d084cAa0533f0aC8c5f05c05065A933E84](https://holesky.etherscan.io/address/0x546D42d084cAa0533f0aC8c5f05c05065A933E84) | [0xb0bbd01b2511bf1448375de5b4c133ee917b32c0](https://holesky.etherscan.io/address/0xb0bbd01b2511bf1448375de5b4c133ee917b32c0) |
+| PufferProtocol                | [0x4CA6cdd39f3f302D92c90e5FBd6f42157AF39574](https://holesky.etherscan.io/address/0x4CA6cdd39f3f302D92c90e5FBd6f42157AF39574) | [0x28b5943aa779faac87533c9b69e94f62d9eb0a2b](https://holesky.etherscan.io/address/0x28b5943aa779faac87533c9b69e94f62d9eb0a2b) |
+| PufferModuleManager           | [0x24E5Cf24Af8db311dD5b1445893f241eE85fbCCe](https://holesky.etherscan.io/address/0x24E5Cf24Af8db311dD5b1445893f241eE85fbCCe) | [0xd9e83f675025daf9d001b0e8db911344999b64ba](https://holesky.etherscan.io/address/0xd9e83f675025daf9d001b0e8db911344999b64ba) |
+| PufferModule                  | - | [0xcc33f4c19729ba3bda60263bb49d9950ec7a9262](https://holesky.etherscan.io/address/0xcc33f4c19729ba3bda60263bb49d9950ec7a9262) |
+| PufferModuleBeacon            | [0x36E9317f2Aba7cB8898723632E3d0C4Af49707E1](https://holesky.etherscan.io/address/0x36E9317f2Aba7cB8898723632E3d0C4Af49707E1) | - |
+| EnclaveVerifier               | - | [0x4E9f92401Dcbaf85c4B2c8fE69F56075e67C02e2](https://holesky.etherscan.io/address/0x4E9f92401Dcbaf85c4B2c8fE69F56075e67C02e2) |
+| PufferOracle                  | - | [0x0B24573A16754ABDdD7A591cBCaA21A0E9586d9e](https://holesky.etherscan.io/address/0x0B24573A16754ABDdD7A591cBCaA21A0E9586d9e) |
+| RestakingOperatorBeacon       | [0x5907c141d6b3759974e4b14243255d8cfa5a9c25](https://holesky.etherscan.io/address/0x5907c141d6b3759974e4b14243255d8cfa5a9c25) | - |
+| RestakingOperator             | - | [0xed47315e5b2b3fecd7897f07304ce6264090151e](https://holesky.etherscan.io/address/0xed47315e5b2b3fecd7897f07304ce6264090151e) |
+| OperationsCoordinator             | - | [0x34db5c4c35181ac4d97823e0c0c4edd18e9a6055](https://holesky.etherscan.io/address/0x34db5c4c35181ac4d97823e0c0c4edd18e9a6055) |
+
+## Restaking
+| PufferModule Name | PufferModule Address | EigenPod Address | RestakingOperator Address <br/>(delegated to) |
+| :-------------------------------: | :------: | :----------------: | :--------------------------------: |
+TBD
+
+## V1
+
 | Name                          | Proxy | Implementation |
 | ----------------------------- | ----- | -------------- |
 | PufferVault (pufETH)          | [0x98408eadD0C7cC9AebbFB2AD2787c7473Db7A1fa](https://holesky.etherscan.io/address/0x98408eadD0C7cC9AebbFB2AD2787c7473Db7A1fa) | [0x3Ed1653677626C38afcf88C6Eec954EE805B72F5](https://holesky.etherscan.io/address/0x3Ed1653677626C38afcf88C6Eec954EE805B72F5) |
