@@ -15,7 +15,7 @@
 | PufferProtocol                  | [0xf7b6B32492c2e13799D921E84202450131bd238B](https://etherscan.io/address/0xf7b6B32492c2e13799D921E84202450131bd238B) | [0xd05EDf0bc5C2C960A7EB5485c8f965c151DF2B00](https://etherscan.io/address/0xd05EDf0bc5C2C960A7EB5485c8f965c151DF2B00) |
 | RestakingOperatorBeacon         | [0x6756B856Dd3843C84249a6A31850cB56dB824c4B](https://etherscan.io/address/0x6756B856Dd3843C84249a6A31850cB56dB824c4B) | - |
 | RestakingOperator               | - | [0xa1779844E51f40cB703C775B0c3cca410a72Ea47](https://etherscan.io/address/0xa1779844E51f40cB703C775B0c3cca410a72Ea47) |
-| ValidatorTicket                 | [0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d](https://etherscan.io/address/0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d) | [0xD88F8315F6c8883f450e5E33e114e880e1BaB56F](https://etherscan.io/address/0xD88F8315F6c8883f450e5E33e114e880e1BaB56F) |
+| ValidatorTicket                 | [0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A](https://etherscan.io/address/0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A) | [0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d](https://etherscan.io/address/0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d) |
 | OperationsCoordinator           | - | [0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7](https://etherscan.io/address/0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7) | 
 | L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |      | 
 
