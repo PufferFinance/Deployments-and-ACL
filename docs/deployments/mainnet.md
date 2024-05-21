@@ -8,15 +8,16 @@
 | AccessManager                   | - | [0x8c1686069474410E6243425f4a10177a94EBEE11](https://etherscan.io/address/0x8c1686069474410E6243425f4a10177a94EBEE11) |
 | EnclaveVerifier                 | - | [0x1d03e4bCC928795B1EEac1205fa9dDC4a3241D95](https://etherscan.io/address/0x1d03e4bCC928795B1EEac1205fa9dDC4a3241D95) |
 | GuardianModule                  | - | [0x628b183F248a142A598AA2dcCCD6f7E480a7CcF2](https://etherscan.io/address/0x628b183F248a142A598AA2dcCCD6f7E480a7CcF2) |
-| PufferModuleManager             | [0x9E1E4fCb49931df5743e659ad910d331735C3860](https://etherscan.io/address/0x9E1E4fCb49931df5743e659ad910d331735C3860) | [0x7579EbE17A5C4522cc7790da600b04efC9EBD1a2](https://etherscan.io/address/0x7579EbE17A5C4522cc7790da600b04efC9EBD1a2) |
+| PufferModuleManager             | [0x9E1E4fCb49931df5743e659ad910d331735C3860](https://etherscan.io/address/0x9E1E4fCb49931df5743e659ad910d331735C3860) | [0x07df6fa1b78a64dc2c97ea0bf77c227d9655a9a3](https://etherscan.io/address/0x07df6fa1b78a64dc2c97ea0bf77c227d9655a9a3) |
 | PufferOracle                    | - | [0x0BE2aE0edbeBb517541DF217EF0074FC9a9e994f](https://etherscan.io/address/0x0BE2aE0edbeBb517541DF217EF0074FC9a9e994f) |
 | PufferModuleBeacon              | [0xdd38A5a7789C74fc7F64556fc772343658EEBb04](https://etherscan.io/address/0xdd38A5a7789C74fc7F64556fc772343658EEBb04) | - |
 | PufferModule                    | - | [0x7f9eb5982388a4683CcAB27A50207CB9e76c2FCC](https://etherscan.io/address/0x7f9eb5982388a4683CcAB27A50207CB9e76c2FCC) |
 | PufferProtocol                  | [0xf7b6B32492c2e13799D921E84202450131bd238B](https://etherscan.io/address/0xf7b6B32492c2e13799D921E84202450131bd238B) | [0xd05EDf0bc5C2C960A7EB5485c8f965c151DF2B00](https://etherscan.io/address/0xd05EDf0bc5C2C960A7EB5485c8f965c151DF2B00) |
 | RestakingOperatorBeacon         | [0x6756B856Dd3843C84249a6A31850cB56dB824c4B](https://etherscan.io/address/0x6756B856Dd3843C84249a6A31850cB56dB824c4B) | - |
-| RestakingOperator               | - | [0xa1779844E51f40cB703C775B0c3cca410a72Ea47](https://etherscan.io/address/0xa1779844E51f40cB703C775B0c3cca410a72Ea47) |
+| RestakingOperator               | - | [0x7a6e576ad6e1059f8e391e97953d592e7a9b5a34](https://etherscan.io/address/0x7a6e576ad6e1059f8e391e97953d592e7a9b5a34) |
 | ValidatorTicket                 | [0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A](https://etherscan.io/address/0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A) | [0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d](https://etherscan.io/address/0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d) |
 | OperationsCoordinator           | - | [0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7](https://etherscan.io/address/0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7) | 
+| AVSContractsRegistry           | - | [0x1565e55b63675c703fcc3778bd33ea97f7be882f](https://etherscan.io/address/0x1565e55b63675c703fcc3778bd33ea97f7be882f) | 
 | L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |      | 
 
 
