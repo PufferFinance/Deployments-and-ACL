@@ -25,7 +25,15 @@
 ## Restaking
 | PufferModule Name | PufferModule Address | EigenPod Address | RestakingOperator Address <br/>(delegated to) |
 | :-------------------------------: | :------: | :----------------: | :--------------------------------: |
-TBD
+| `PUFFER_MODULE_0` | [0x9017...1655](https://holesky.etherscan.io/address/0x9017a172578458E1204691D6E1dB92ca61381655) | [0xeD9B...f52](https://etherscan.io/address/0xeD9B08B8958B89E7A9008CAc0937E46F73Bf8f52) | [0x93b3...149](https://etherscan.io/address/0x93b33055AbB68F1b4bDC8D1A3e13c3Ac247c1149) |
+| `PUFFER_MODULE_1` | [0xA797...22e](https://etherscan.io/address/0xA797683Bbe24c2BDe0099db88109860e58C3222e) | [0x3BC4...a91](https://etherscan.io/address/0x3BC485C671B2ceb000F3FbBb4d265087C9019a91) | [0x84e9...dc8](https://etherscan.io/address/0x84e9e543eF0e44Fd53e41B36afDC8267ec887dc8) |
+| `PUFFER_MODULE_2` | [0xE46c...9D9](https://etherscan.io/address/0xE46c792230e2F548d0e48e1A78B59265A53949D9) | [0xb4E7...5DE](https://etherscan.io/address/0xb4E7f9e37E7F393A61A696c8536B8BD5f12835DE) | [0x00FC...6F2](https://etherscan.io/address/0x00FC6cAA942BF29d43739Cd949E2eddcf6E8d6F2) |
+| `PUFFER_MODULE_3` | [0x5BFd...9c6](https://etherscan.io/address/0x5BFd22af18F65f1747643be371bFfb32Ce9089c6) | [0xA37f...9CC](https://etherscan.io/address/0xA37fF697eD5940C06789a3E8399a737FdD3E79CC) | [0xd51C...859](https://etherscan.io/address/0xd51C6A2702d14e48389bC843279502E8E69F5859) |
+| `PUFFER_MODULE_4` | [0x670f...E47](https://etherscan.io/address/0x670f81009B096EB761116ddc27586AD56a4a9E47) | [0x61b8...320](https://etherscan.io/address/0x61b8797A03f3fF835aA4Ed8d7b6539255A867320) | [0x9d24...D0A](https://etherscan.io/address/0x9d24feA37ABC3481dd6C1a3DaBA55Bb8f1CB3D0A) |
+| `PUFFER_MODULE_5` | [0xEf6C...eAB](https://etherscan.io/address/0xEf6C37C1129cA9c5970805b170889D9A13594eAB) | [0x4546...A2c](https://etherscan.io/address/0x4546D2b43cFf3fA79A0305744F00D2fb4b3F0A2c) | [0x5018...12a](https://etherscan.io/address/0x501808A186CC1edc95C9F5722db76B4470e0B12a) |
+| `PUFFER_MODULE_6` | [0xfF61...443](https://etherscan.io/address/0xfF617f7c9DFEdeeA17ee92C53451f3073A7ba443) | [0x00e9...079](https://etherscan.io/address/0x00e9aD877ECF90B25826fdE33ae0283B80dbE079) | [0x7f08...FB1](https://etherscan.io/address/0x7f08C09553DB44c826a323197612E6f8693F7FB1) |
+| `PUFFER_MODULE_7` | [0xAf25...366](https://etherscan.io/address/0xAf25B9bF1C6fecf22bDB86B16db2296bfEc0E366) | [0xb786...906](https://etherscan.io/address/0xb78646781adb75C1053aF2acf1DE18d61c019906) | [0x557a...4B9](https://etherscan.io/address/0x557a6e478d2Ea61F0A27BAaA7E96CF3920DAb4B9) |
+
 
 ## V1
 
