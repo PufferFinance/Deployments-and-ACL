@@ -21,6 +21,7 @@
 | WETH             | - | [0x35B1167b4D37931540F4e5189004d1756d1381B0](https://holesky.etherscan.io/address/0x35B1167b4D37931540F4e5189004d1756d1381B0) |
 | AVSContractsRegistry             | - | [0x09be86b01c1e32dca2ebdedb01cd5a3f798b80c5](https://holesky.etherscan.io/address/0x09be86b01c1e32dca2ebdedb01cd5a3f798b80c5) |
 | Timelock             | - | [0x829af0b3d099a12f0ae1b806f466ef771e2c07f8](https://holesky.etherscan.io/address/0x829af0b3d099a12f0ae1b806f466ef771e2c07f8) |
+| ValidatorTicketPricer         | - | [0x12A21C839f63ea106f9614014B269Cc662C46c06](https://holesky.etherscan.io/address/0x12A21C839f63ea106f9614014B269Cc662C46c06) |
 
 ## Restaking
 | PufferModule Name | PufferModule Address | EigenPod Address | RestakingOperator Address <br/>(delegated to) |
