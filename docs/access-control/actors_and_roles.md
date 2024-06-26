@@ -21,10 +21,12 @@
 | Role ID |           Full Title        |                    Description of the Role                                   |
 | :-----: | :-------------------------: | :--------------------------------------------------------------------------- |
 | 0       | ADMIN_ROLE                  | Administrative access for upgradability, only held by Timelock.              |
-| 5       | ROLE_ID_AVS_COORDINATOR_ALLOWLISTER                  | Whitelists AVSs that can be opted in to              |
+| 5       | ROLE_ID_AVS_COORDINATOR_ALLOWLISTER                | Whitelists AVSs that can be opted in to               |
+| 7       | ROLE_ID_LOCKBOX             | xPufETH LockBox Contract.                                                    |
 | 22      | ROLE_ID_OPERATIONS_MULTISIG | Operations multisig, manages operational tasks and transactions.             |
 | 23      | ROLE_ID_OPERATIONS_PAYMASTER| Responsible for managing functional transactions and pay the operational gas.|
 | 24      | ROLE_ID_OPERATIONS_COORDINATOR | Access Controlled smart contract with sanity checks for system variables. |
+| 25      | ROLE_ID_VT_PRICER           | Role for the VT price poster.                                                |
 | 77      | ROLE_ID_DAO                 | DAOs role which after formation will control the protocol                    |
 | 1234    | ROLE_ID_PUFFER_PROTOCOL     | Main Puffer Protocol contract                                                |
 | max_int | PUBLIC_ROLE                 | Public role for public functions                                             |   

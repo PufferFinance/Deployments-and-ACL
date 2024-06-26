@@ -19,6 +19,9 @@
 | OperationsCoordinator           | - | [0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7](https://etherscan.io/address/0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7) | 
 | AVSContractsRegistry           | - | [0x1565e55b63675c703fcc3778bd33ea97f7be882f](https://etherscan.io/address/0x1565e55b63675c703fcc3778bd33ea97f7be882f) | 
 | L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |      | 
+| ValidatorTicketPricer   | [0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3](https://etherscan.io/address/0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3) |      | 
+| xPufETH   | [0xD7D2802f6b19843ac4DfE25022771FD83b5A7464](https://etherscan.io/address/0xD7D2802f6b19843ac4DfE25022771FD83b5A7464) |  [0x851040181734FEeC147C9FF878c921fDd7228942](https://etherscan.io/address/0x851040181734FEeC147C9FF878c921fDd7228942)    | 
+| xERC20Lockbox   | [0xF78461CF59683af98dBec13C81dd064f4d77De48](https://etherscan.io/address/0xF78461CF59683af98dBec13C81dd064f4d77De48) |      | 
 
 
 ## Multisigs
