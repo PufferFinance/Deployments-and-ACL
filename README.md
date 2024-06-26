@@ -10,18 +10,18 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Scroll](docs/deployments/scroll.md)
 
 - [ABIs](docs/abis/) - ABIs of deployed smart contracts
-  - [PufferVault](docs/abis/PufferVault.json)
-  - [PufferDepositor](docs/abis/PufferDepositor.json)
-  - [PufferProtocol](docs/abis/PufferProtocol.json)
-  - [OperationsCoordinator](docs/abis/OperationsCoordinator.json)
-  - [GuardianModule](docs/abis/GuardianModule.json)
-  - [PufferModuleManager](docs/abis/PufferModuleManager.json)
-  - [PufferModule](docs/abis/PufferModule.json)
-  - [PufferOracle](docs/abis/PufferOracle.json)
-  - [RestakingOperator](docs/abis/RestakingOperator.json)
-  - [ValidatorTicket](docs/abis/ValidatorTicket.json)
-  - [EnclaveVerifier](docs/abis/EnclaveVerifier.json)
-  - [Timelock](docs/abis/Timelock.json)
+  - [PufferVault](docs/abis/mainnet/PufferVault.json)
+  - [PufferDepositor](docs/abis/mainnet/PufferDepositor.json)
+  - [PufferProtocol](docs/abis/mainnet/PufferProtocol.json)
+  - [OperationsCoordinator](docs/abis/mainnet/OperationsCoordinator.json)
+  - [GuardianModule](docs/abis/mainnet/GuardianModule.json)
+  - [PufferModuleManager](docs/abis/mainnet/PufferModuleManager.json)
+  - [PufferModule](docs/abis/mainnet/PufferModule.json)
+  - [PufferOracle](docs/abis/mainnet/PufferOracle.json)
+  - [RestakingOperator](docs/abis/mainnet/RestakingOperator.json)
+  - [ValidatorTicket](docs/abis/mainnet/ValidatorTicket.json)
+  - [EnclaveVerifier](docs/abis/mainnet/EnclaveVerifier.json)
+  - [Timelock](docs/abis/mainnet/Timelock.json)
 
 
 - [Access Control](docs/access-control/) - Access control details for various contracts.
