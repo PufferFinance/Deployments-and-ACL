@@ -16,7 +16,7 @@
 | EnclaveVerifier               | - | [0xf97dc4d0e86ddfbf44da63d25d62b9a55e5eb330](https://holesky.etherscan.io/address/0xf97dc4d0e86ddfbf44da63d25d62b9a55e5eb330) |
 | PufferOracle                  | - | [0x8e043ed3f06720615685d4978770cd5c8fe90fe3](https://holesky.etherscan.io/address/0x8e043ed3f06720615685d4978770cd5c8fe90fe3) |
 | RestakingOperatorBeacon       | [0x99c3E46E575df251149866285DdA7DAEba875B71](https://holesky.etherscan.io/address/0x99c3E46E575df251149866285DdA7DAEba875B71) | - |
-| RestakingOperator             | - | [0x12f1c839ec3307a56a17f5df26ea428934b877fd](https://holesky.etherscan.io/address/0x12f1c839ec3307a56a17f5df26ea428934b877fd) |
+| RestakingOperator             | - | [0xF1613817b7689D84FEf39B7BEF4D13D45912D969](https://holesky.etherscan.io/address/0xF1613817b7689D84FEf39B7BEF4D13D45912D969) |
 | OperationsCoordinator             | - | [0xe66de68c1c8966f3c6aeb30ef88ba97a8181d081](https://holesky.etherscan.io/address/0xe66de68c1c8966f3c6aeb30ef88ba97a8181d081) |
 | WETH             | - | [0x35B1167b4D37931540F4e5189004d1756d1381B0](https://holesky.etherscan.io/address/0x35B1167b4D37931540F4e5189004d1756d1381B0) |
 | AVSContractsRegistry             | - | [0x09be86b01c1e32dca2ebdedb01cd5a3f798b80c5](https://holesky.etherscan.io/address/0x09be86b01c1e32dca2ebdedb01cd5a3f798b80c5) |
