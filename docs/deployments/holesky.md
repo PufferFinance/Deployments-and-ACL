@@ -10,8 +10,8 @@
 | GuardianModule                | - | [0x0910310130d1c062def8b807528bdac80203bc66](https://holesky.etherscan.io/address/0x0910310130d1c062def8b807528bdac80203bc66) |
 | ValidatorTicket               | [0xB028194785178a94Fe608994A4d5AD84c285A640](https://holesky.etherscan.io/address/0xB028194785178a94Fe608994A4d5AD84c285A640) | [0x55a5e647076bd7842c390e78b8925ec42ffe609c](https://holesky.etherscan.io/address/0x55a5e647076bd7842c390e78b8925ec42ffe609c) |
 | PufferProtocol                | [0xE00c79408B9De5BaD2FDEbB1688997a68eC988CD](https://holesky.etherscan.io/address/0xE00c79408B9De5BaD2FDEbB1688997a68eC988CD) | [0xc798C3462fc090d4444a3a7e1F08F4c0b8b7a59F](https://holesky.etherscan.io/address/0xc798C3462fc090d4444a3a7e1F08F4c0b8b7a59F) |
-| PufferModuleManager           | [0x20377c306451140119C9967Ba6D0158a05b4eD07](https://holesky.etherscan.io/address/0x20377c306451140119C9967Ba6D0158a05b4eD07) | [0x314ff53539678ed3bd675bb18b91d48b879f0dd0](https://holesky.etherscan.io/address/0x314ff53539678ed3bd675bb18b91d48b879f0dd0) |
-| PufferModule                  | - | [0xc7ab141cf9a3cdac4a08a2301c7077a0dfacd4fb](https://holesky.etherscan.io/address/0xc7ab141cf9a3cdac4a08a2301c7077a0dfacd4fb) |
+| PufferModuleManager           | [0x20377c306451140119C9967Ba6D0158a05b4eD07](https://holesky.etherscan.io/address/0x20377c306451140119C9967Ba6D0158a05b4eD07) | [0x5Ac63Dc9ff51B8099d97185225374845CB0189c1](https://holesky.etherscan.io/address/0x5Ac63Dc9ff51B8099d97185225374845CB0189c1) |
+| PufferModule                  | - | [0x1DbF0Fb3b363b1cCc74Ca028224eEd7396c18B4A](https://holesky.etherscan.io/address/0x1DbF0Fb3b363b1cCc74Ca028224eEd7396c18B4A) |
 | PufferModuleBeacon            | [0x4B0542470935ed4b085C3AD1983E85f5623ABf89](https://holesky.etherscan.io/address/0x4B0542470935ed4b085C3AD1983E85f5623ABf89) | - |
 | EnclaveVerifier               | - | [0xf97dc4d0e86ddfbf44da63d25d62b9a55e5eb330](https://holesky.etherscan.io/address/0xf97dc4d0e86ddfbf44da63d25d62b9a55e5eb330) |
 | PufferOracle                  | - | [0x8e043ed3f06720615685d4978770cd5c8fe90fe3](https://holesky.etherscan.io/address/0x8e043ed3f06720615685d4978770cd5c8fe90fe3) |
