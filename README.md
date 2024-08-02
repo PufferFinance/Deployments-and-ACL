@@ -8,6 +8,8 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Mainnet](docs/deployments/mainnet.md)
   - [Holesky](docs/deployments/holesky.md)
   - [Scroll](docs/deployments/scroll.md)
+  - [Base](docs/deployments/base.md)
+  - [Binance Smart Chain](docs/deployments/bsc.md)
 
 - [ABIs](docs/abis/mainnet) - ABIs of deployed smart contracts at Mainnet
   - [PufferVault](docs/abis/mainnet/PufferVault.json)
