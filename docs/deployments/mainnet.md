@@ -18,11 +18,18 @@
 | ValidatorTicket                 | [0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A](https://etherscan.io/address/0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A) | [0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d](https://etherscan.io/address/0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d) |
 | OperationsCoordinator           | - | [0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7](https://etherscan.io/address/0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7) | 
 | AVSContractsRegistry           | - | [0x1565e55b63675c703fcc3778bd33ea97f7be882f](https://etherscan.io/address/0x1565e55b63675c703fcc3778bd33ea97f7be882f) | 
-| L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |      | 
-| ValidatorTicketPricer   | [0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3](https://etherscan.io/address/0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3) |      | 
+| L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |   -   | 
+| ValidatorTicketPricer   | [0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3](https://etherscan.io/address/0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3) |  -    | 
 | xPufETH   | [0xD7D2802f6b19843ac4DfE25022771FD83b5A7464](https://etherscan.io/address/0xD7D2802f6b19843ac4DfE25022771FD83b5A7464) |  [0x851040181734FEeC147C9FF878c921fDd7228942](https://etherscan.io/address/0x851040181734FEeC147C9FF878c921fDd7228942)    | 
-| xERC20Lockbox   | [0xF78461CF59683af98dBec13C81dd064f4d77De48](https://etherscan.io/address/0xF78461CF59683af98dBec13C81dd064f4d77De48) |      | 
+| xERC20Lockbox   | [0xF78461CF59683af98dBec13C81dd064f4d77De48](https://etherscan.io/address/0xF78461CF59683af98dBec13C81dd064f4d77De48) |  -    | 
 
+## L1 -> L2 Staking contracts
+
+| Name                            | Proxy | Implementation |
+| ------------------------------- | ----- | -------------- |
+| PufferL2Depositor                     | - | [0x3436E0B85cd929929F5802e792CFE282166E0259](https://etherscan.io/address/0x3436E0B85cd929929F5802e792CFE282166E0259) 
+| PufLocker                     | [0x48e8dE138C246c14248C94d2D616a2F9eb4590D2](https://etherscan.io/address/0x48e8dE138C246c14248C94d2D616a2F9eb4590D2) |[0xFb5Cd790D0719f6EF59151aF2263f023C2279f69](https://etherscan.io/address/0xFb5Cd790D0719f6EF59151aF2263f023C2279f69) | 
+| puf Wrapped Ether                    | - | [0x2B36F6bfd223f460E7e43EF49BC487481648948C](https://etherscan.io/address/0x2B36F6bfd223f460E7e43EF49BC487481648948C) 
 
 ## Multisigs
 | Name                            | Address |
