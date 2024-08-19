@@ -35,6 +35,16 @@
 | `PUFFER_MODULE_6` | [0xfF61...443](https://holesky.etherscan.io/address/0xfF617f7c9DFEdeeA17ee92C53451f3073A7ba443) | [0x00e9...079](https://holesky.etherscan.io/address/0x00e9aD877ECF90B25826fdE33ae0283B80dbE079) | [0x7f08...FB1](https://holesky.etherscan.io/address/0x7f08C09553DB44c826a323197612E6f8693F7FB1) |
 | `PUFFER_MODULE_7` | [0xAf25...366](https://holesky.etherscan.io/address/0xAf25B9bF1C6fecf22bDB86B16db2296bfEc0E366) | [0xb786...906](https://holesky.etherscan.io/address/0xb78646781adb75C1053aF2acf1DE18d61c019906) | [0x557a...4B9](https://holesky.etherscan.io/address/0x557a6e478d2Ea61F0A27BAaA7E96CF3920DAb4B9) |
 
+## L1 -> L2 Staking contracts
+
+| Name                            | Proxy | Implementation |
+| ------------------------------- | ----- | -------------- |
+| PufferL2Depositor                     | - | [0x0af6998e4828ad8ef8f79a9288d0a861890f791d](https://holesky.etherscan.io/address/0x0af6998e4828ad8ef8f79a9288d0a861890f791d) 
+| PufLocker                     | [0xa58983ad0899a452b7420bc57228e329d7ba92b6](https://holesky.etherscan.io/address/0xa58983ad0899a452b7420bc57228e329d7ba92b6) |[0x26e1fc4ac0df8c1af6d4ae49147d0fb144a9aede](https://holesky.etherscan.io/address/0x26e1fc4ac0df8c1af6d4ae49147d0fb144a9aede) | 
+| puf Wrapped Ether                    | - | [0x5335f231C22d472Ab31CC2690A2247d25efd76a5](https://holesky.etherscan.io/address/0x5335f231C22d472Ab31CC2690A2247d25efd76a5) 
+| puf DAI                    | - | [0x2D6B705e118198A02F00490BA323B17eC5D58109](https://holesky.etherscan.io/address/0x2D6B705e118198A02F00490BA323B17eC5D58109) 
+| puf USDC                    | - | [0x5D2702EE8638401Be2C991df3B066247B49F1e10](https://holesky.etherscan.io/address/0x5D2702EE8638401Be2C991df3B066247B49F1e10) 
+
 ## V1
 
 | Name                          | Proxy | Implementation |
