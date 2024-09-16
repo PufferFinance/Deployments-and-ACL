@@ -2,7 +2,7 @@
 
 | Name                            | Proxy | Implementation | Commit Hash |
 | ------------------------------- | ----- | -------------- |------------- |
-| PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0xCD2C0836d3EaE00891415971C22583e55BBc341f](https://etherscan.io/address/0xCD2C0836d3EaE00891415971C22583e55BBc341f) |  |
+| PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x17D5F2803D9F922fa9C3A77849962df0D19e6674](https://etherscan.io/address/0x17D5F2803D9F922fa9C3A77849962df0D19e6674) | 121913af72a51c34564e998d481c6e7e72b4f0ba  |
 | PufferDepositor                 | [0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff](https://etherscan.io/address/0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff) | [0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b](https://etherscan.io/address/0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b) | |
 | Timelock                        | - | [0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) | |
 | AccessManager                   | - | [0x8c1686069474410E6243425f4a10177a94EBEE11](https://etherscan.io/address/0x8c1686069474410E6243425f4a10177a94EBEE11) | |
@@ -22,6 +22,7 @@
 | ValidatorTicketPricer   | [0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3](https://etherscan.io/address/0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3) |  -    |  |
 | xPufETH   | [0xD7D2802f6b19843ac4DfE25022771FD83b5A7464](https://etherscan.io/address/0xD7D2802f6b19843ac4DfE25022771FD83b5A7464) |  [0x851040181734FEeC147C9FF878c921fDd7228942](https://etherscan.io/address/0x851040181734FEeC147C9FF878c921fDd7228942)    |  |
 | xERC20Lockbox   | [0xF78461CF59683af98dBec13C81dd064f4d77De48](https://etherscan.io/address/0xF78461CF59683af98dBec13C81dd064f4d77De48) |  -    |  |
+| L1RewardManager                 | [0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b](https://etherscan.io/address/0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b) | [0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467](https://etherscan.io/address/0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467) | 121913af72a51c34564e998d481c6e7e72b4f0ba |
 
 ## Aera contracts - AVS rewards management
 
