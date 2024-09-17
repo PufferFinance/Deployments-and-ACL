@@ -22,6 +22,10 @@
 | AVSContractsRegistry             | - | [0x09be86b01c1e32dca2ebdedb01cd5a3f798b80c5](https://holesky.etherscan.io/address/0x09be86b01c1e32dca2ebdedb01cd5a3f798b80c5) | |
 | Timelock             | - | [0x829af0b3d099a12f0ae1b806f466ef771e2c07f8](https://holesky.etherscan.io/address/0x829af0b3d099a12f0ae1b806f466ef771e2c07f8) | |
 | ValidatorTicketPricer         | - | [0x12A21C839f63ea106f9614014B269Cc662C46c06](https://holesky.etherscan.io/address/0x12A21C839f63ea106f9614014B269Cc662C46c06) | |
+| L1RewardManager         | - | [0x10f970bcb84B82B82a65eBCbF45F26dD26D69F12](https://holesky.etherscan.io/address/0x10f970bcb84B82B82a65eBCbF45F26dD26D69F12) | 5525284bc0aee5c2e35252d5da8e152eff10fbbd |
+| L2RewardManager         | - | [0x58C046794f69A8830b0BE737022a45b4acd01dE5](https://holesky.etherscan.io/address/0x58C046794f69A8830b0BE737022a45b4acd01dE5) | 5525284bc0aee5c2e35252d5da8e152eff10fbbd |
+| MockBridge         | - | [0x20598a049Be1ECFF7689cd300a2B2ce36B87B9A9](https://holesky.etherscan.io/address/0x20598a049Be1ECFF7689cd300a2B2ce36B87B9A9) | 5525284bc0aee5c2e35252d5da8e152eff10fbbd |
+
 
 ## Restaking
 | PufferModule Name | PufferModule Address | EigenPod Address | RestakingOperator Address <br/>(delegated to) |
