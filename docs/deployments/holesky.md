@@ -25,6 +25,7 @@
 | L1RewardManager         | [0x10f970bcb84B82B82a65eBCbF45F26dD26D69F12](https://holesky.etherscan.io/address/0x10f970bcb84B82B82a65eBCbF45F26dD26D69F12) | [0x28F4BFEFe877C3c03Df55dCda68818028bf1567C](https://holesky.etherscan.io/address/0x28F4BFEFe877C3c03Df55dCda68818028bf1567C) | 5525284bc0aee5c2e35252d5da8e152eff10fbbd |
 | L2RewardManager         | [0x58C046794f69A8830b0BE737022a45b4acd01dE5](https://holesky.etherscan.io/address/0x58C046794f69A8830b0BE737022a45b4acd01dE5) | [0x7f8fa7ec4E3775127a7332bbe3425d8E28722d13](https://holesky.etherscan.io/address/0x7f8fa7ec4E3775127a7332bbe3425d8E28722d13)  | 5525284bc0aee5c2e35252d5da8e152eff10fbbd |
 | MockBridge         | - | [0x20598a049Be1ECFF7689cd300a2B2ce36B87B9A9](https://holesky.etherscan.io/address/0x20598a049Be1ECFF7689cd300a2B2ce36B87B9A9) | 5525284bc0aee5c2e35252d5da8e152eff10fbbd |
+| PufferWithdrawalManager         | [0x5A3E1069B66800c0ecbc91bd81b1AE4D1804DBc4](https://holesky.etherscan.io/address/0x5A3E1069B66800c0ecbc91bd81b1AE4D1804DBc4) | [0xC7De6b9f690B9116e477aF556C13FD6F01DD4a76](https://holesky.etherscan.io/address/0xC7De6b9f690B9116e477aF556C13FD6F01DD4a76) | 4570bb7ffea02ab0338e4c8e0db9389162f83a08 |
 
 
 ## Restaking
