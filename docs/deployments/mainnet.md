@@ -35,7 +35,7 @@
 | Escrow Curve                     | [0xAaAb5528aFf964CEAc972E39c2357c2D503A9196](https://etherscan.io/address/0xAaAb5528aFf964CEAc972E39c2357c2D503A9196) | [0xA83593E682f2c230735e80b49640427DAdE4B612](https://etherscan.io/address/0xA83593E682f2c230735e80b49640427DAdE4B612)
 | Exit Queue                     | [0xD9C2d314E29F1940d2a65A691881F0950fE4A455](https://etherscan.io/address/0xD9C2d314E29F1940d2a65A691881F0950fE4A455) | [0x6B4EecB471A6e3784cf850A1fb3460260e030708](https://etherscan.io/address/0x6B4EecB471A6e3784cf850A1fb3460260e030708)
 | Clock                     | [0x8BCDf6291F251cF8eCf5ac06bFc4A2B02Ecc26eB](https://etherscan.io/address/0x8BCDf6291F251cF8eCf5ac06bFc4A2B02Ecc26eB) | [0x23b978edeC8A774e50C73589F58730f3753FBf2B](https://etherscan.io/address/0x23b978edeC8A774e50C73589F58730f3753FBf2B)
-| ERC-721 Lock                     | [0x1b6ec227ceBeC25118270efbb4b67642fc29965E](https://etherscan.io/address/0x1b6ec227ceBeC25118270efbb4b67642fc29965E) | -
+| ERC-721 Lock                     | [0x1b6ec227ceBeC25118270efbb4b67642fc29965E](https://etherscan.io/address/0x1b6ec227ceBeC25118270efbb4b67642fc29965E) | [0x92fe050c6bb5fffafd5092cca204ccdfe8d1155e](https://etherscan.io/address/0x92fe050c6bb5fffafd5092cca204ccdfe8d1155e)
 
 
 ## Aera contracts - AVS rewards management
