@@ -26,6 +26,19 @@
 | PufferWithdrawalManager                 | [0xDdA0483184E75a5579ef9635ED14BacCf9d50283](https://etherscan.io/address/0xDdA0483184E75a5579ef9635ED14BacCf9d50283) | [0x98E1d95B4b3A5A082642e17274D67d62691288F1](https://etherscan.io/address/0x98E1d95B4b3A5A082642e17274D67d62691288F1) | e17dcff9b299a4ac6043983b829e6ee57bea957a |
 | PUFFER                 | - | [0x4d1C297d39C5c1277964D0E3f8Aa901493664530](https://etherscan.io/address/0x4d1C297d39C5c1277964D0E3f8Aa901493664530) | 6fabc450728f68b61836d9955bd170bddc80259a |
 
+## Governance contracts
+| Name                            | Proxy | Implementation |
+| ------------------------------- | ----- | -------------- |
+| PUFFER Token                     | - | [0x4d1C297d39C5c1277964D0E3f8Aa901493664530](https://etherscan.io/address/0x4d1C297d39C5c1277964D0E3f8Aa901493664530) 
+| vePUFFER Contract                     | [0xA55eD5808aeCDF23AE3782C1443185f5D2363ce7](https://etherscan.io/address/0xA55eD5808aeCDF23AE3782C1443185f5D2363ce7) | [0x218431F9EddE0ad29134FF5316258C7eeeDbD516](https://etherscan.io/address/0x218431F9EddE0ad29134FF5316258C7eeeDbD516)
+| DAO                     | [0x5dEA8E499b05de8F86E7521F039770268055b23F](https://etherscan.io/address/0x5dEA8E499b05de8F86E7521F039770268055b23F) | [0x52Af16664155608b845BE18aa29620EbF6eA2D3a](https://etherscan.io/address/0x52Af16664155608b845BE18aa29620EbF6eA2D3a)
+| DAO Multisig (temporary)                     | [0xA303C435563a4544a84E26501F4666346Ff73a0d](https://etherscan.io/address/0xA303C435563a4544a84E26501F4666346Ff73a0d) | [0xcEd33DF91AC49415c74BF1b5c218B83a2B8C2f3C](https://etherscan.io/address/0xcEd33DF91AC49415c74BF1b5c218B83a2B8C2f3C)
+| Escrow Curve                     | [0xAaAb5528aFf964CEAc972E39c2357c2D503A9196](https://etherscan.io/address/0xAaAb5528aFf964CEAc972E39c2357c2D503A9196) | [0xA83593E682f2c230735e80b49640427DAdE4B612](https://etherscan.io/address/0xA83593E682f2c230735e80b49640427DAdE4B612)
+| Exit Queue                     | [0xD9C2d314E29F1940d2a65A691881F0950fE4A455](https://etherscan.io/address/0xD9C2d314E29F1940d2a65A691881F0950fE4A455) | [0x6B4EecB471A6e3784cf850A1fb3460260e030708](https://etherscan.io/address/0x6B4EecB471A6e3784cf850A1fb3460260e030708)
+| Clock                     | [0x8BCDf6291F251cF8eCf5ac06bFc4A2B02Ecc26eB](https://etherscan.io/address/0x8BCDf6291F251cF8eCf5ac06bFc4A2B02Ecc26eB) | [0x23b978edeC8A774e50C73589F58730f3753FBf2B](https://etherscan.io/address/0x23b978edeC8A774e50C73589F58730f3753FBf2B)
+| ERC-721 Lock                     | [0x1b6ec227ceBeC25118270efbb4b67642fc29965E](https://etherscan.io/address/0x1b6ec227ceBeC25118270efbb4b67642fc29965E) | [0x92fe050c6bb5fffafd5092cca204ccdfe8d1155e](https://etherscan.io/address/0x92fe050c6bb5fffafd5092cca204ccdfe8d1155e)
+
+
 ## Aera contracts - AVS rewards management
 
 | Name                            | Proxy | Implementation |
