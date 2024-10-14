@@ -24,7 +24,6 @@
 | xERC20Lockbox   | [0xF78461CF59683af98dBec13C81dd064f4d77De48](https://etherscan.io/address/0xF78461CF59683af98dBec13C81dd064f4d77De48) |  -    |  |
 | L1RewardManager                 | [0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b](https://etherscan.io/address/0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b) | [0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467](https://etherscan.io/address/0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467) | 121913af72a51c34564e998d481c6e7e72b4f0ba |
 | PufferWithdrawalManager                 | [0xDdA0483184E75a5579ef9635ED14BacCf9d50283](https://etherscan.io/address/0xDdA0483184E75a5579ef9635ED14BacCf9d50283) | [0x98E1d95B4b3A5A082642e17274D67d62691288F1](https://etherscan.io/address/0x98E1d95B4b3A5A082642e17274D67d62691288F1) | e17dcff9b299a4ac6043983b829e6ee57bea957a |
-| PUFFER                 | - | [0x4d1C297d39C5c1277964D0E3f8Aa901493664530](https://etherscan.io/address/0x4d1C297d39C5c1277964D0E3f8Aa901493664530) | 6fabc450728f68b61836d9955bd170bddc80259a |
 
 ## Governance contracts
 | Name                            | Proxy | Implementation |
