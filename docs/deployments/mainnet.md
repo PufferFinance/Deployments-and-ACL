@@ -21,9 +21,11 @@
 | L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |   -   |  |
 | ValidatorTicketPricer   | [0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3](https://etherscan.io/address/0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3) |  -    |  |
 | xPufETH   | [0xD7D2802f6b19843ac4DfE25022771FD83b5A7464](https://etherscan.io/address/0xD7D2802f6b19843ac4DfE25022771FD83b5A7464) |  [0x851040181734FEeC147C9FF878c921fDd7228942](https://etherscan.io/address/0x851040181734FEeC147C9FF878c921fDd7228942)    |  |
-| xERC20Lockbox   | [0xF78461CF59683af98dBec13C81dd064f4d77De48](https://etherscan.io/address/0xF78461CF59683af98dBec13C81dd064f4d77De48) |  -    |  |
+| xERC20Lockbox   | [0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5](https://etherscan.io/address/0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5) |  -    |  |
 | L1RewardManager                 | [0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b](https://etherscan.io/address/0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b) | [0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467](https://etherscan.io/address/0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467) | 121913af72a51c34564e998d481c6e7e72b4f0ba |
 | PufferWithdrawalManager                 | [0xDdA0483184E75a5579ef9635ED14BacCf9d50283](https://etherscan.io/address/0xDdA0483184E75a5579ef9635ED14BacCf9d50283) | [0x98E1d95B4b3A5A082642e17274D67d62691288F1](https://etherscan.io/address/0x98E1d95B4b3A5A082642e17274D67d62691288F1) | e17dcff9b299a4ac6043983b829e6ee57bea957a |
+| SOON                  | - | [0xe7Cf38728DB67e5D78A7855000fbEC177B20B649](https://etherscan.io/address/0xe7Cf38728DB67e5D78A7855000fbEC177B20B649) | |
+
 
 ## Governance contracts
 | Name                            | Proxy | Implementation |
