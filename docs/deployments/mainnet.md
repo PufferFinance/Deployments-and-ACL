@@ -24,7 +24,7 @@
 | xERC20Lockbox   | [0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5](https://etherscan.io/address/0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5) |  -    |  |
 | L1RewardManager                 | [0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b](https://etherscan.io/address/0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b) | [0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467](https://etherscan.io/address/0xbf11b5a0d7adeb5c1f2f3dbb85169594aa90c467) | 121913af72a51c34564e998d481c6e7e72b4f0ba |
 | PufferWithdrawalManager                 | [0xDdA0483184E75a5579ef9635ED14BacCf9d50283](https://etherscan.io/address/0xDdA0483184E75a5579ef9635ED14BacCf9d50283) | [0x98E1d95B4b3A5A082642e17274D67d62691288F1](https://etherscan.io/address/0x98E1d95B4b3A5A082642e17274D67d62691288F1) | e17dcff9b299a4ac6043983b829e6ee57bea957a |
-| CARROT                  | - | [0x25368c9c84F8809f52E9A8f847787e1FF3042E7c](https://etherscan.io/address/0x25368c9c84F8809f52E9A8f847787e1FF3042E7c) | 3c749a1a49e3b87c4b82a21b8de791ffbb56b5db |
+| CARROT                  | - | [0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6](https://etherscan.io/address/0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6) | 3c749a1a49e3b87c4b82a21b8de791ffbb56b5db |
 
 
 ## Governance contracts
