@@ -7,4 +7,4 @@
 
 | Name                            | Proxy | Implementation | Commit Hash |
 | ------------------------------- | ----- | -------------- | - |
-| Timelock                     | |[0x6c460b2c6D6719562D5dA43E5152B375e79B9A8B](https://soneium.blockscout.com/address/0x6c460b2c6D6719562D5dA43E5152B375e79B9A8B) | c6951ae3bb9ac9e375f9ee99c40cd32987f454df |
+| pufETH(BurnMintERC677)                     | |[0x6c460b2c6D6719562D5dA43E5152B375e79B9A8B](https://soneium.blockscout.com/address/0x6c460b2c6D6719562D5dA43E5152B375e79B9A8B) | c6951ae3bb9ac9e375f9ee99c40cd32987f454df |
