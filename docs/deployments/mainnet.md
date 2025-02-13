@@ -27,7 +27,7 @@
 | PufferRevenueDepositor                 | [0x21660F4681aD5B6039007f7006b5ab0EF9dE7882](https://etherscan.io/address/0x21660F4681aD5B6039007f7006b5ab0EF9dE7882) | [0xd7b4a10ece470208661f111f3546f09693a62d3e](https://etherscan.io/address/0xd7b4a10ece470208661f111f3546f09693a62d3e) |  |
 | CARROT                  | - | [0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6](https://etherscan.io/address/0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6) | c63c542b791f9e1d76b00a328e1c48ce579888c0 |
 | sCARROT                  | - | [0x99C599227C65132822f0290D9e5B4b0430d6c0d6](https://etherscan.io/address/0x99C599227C65132822f0290D9e5B4b0430d6c0d6) | 40b7fccbca1fac383b05dc2bbf3dd2f03280def9 |
-
+| LockAndReleasePool(Chainlink)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
 
 
 ## Governance contracts
