@@ -71,11 +71,12 @@
 | TellerWithMultiAssetSupport (pufETHs)| - | [0xd049ebeaa59b75ba8ee38f9f6830db7293320236](https://etherscan.io/address/0xd049ebeaa59b75ba8ee38f9f6830db7293320236) |
 
 ## Multisigs
-| Name                            | Address |
-| ------------------------------- | -------------- |
-| Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) |
-| Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) |
-| Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) |
+| Name                            | Address | Description |
+| ------------------------------- | -------------- | ------------ |
+| Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) | - |
+| Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) | - |
+| Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) | - |
+| Puffer's OPERATOR_AVS_SOCKET UPDATER | [0x9584b093A1cc050b5590A41DF88F46f18261b59f](https://etherscan.io/address/0x9584b093A1cc050b5590A41DF88F46f18261b59f) | Responsible for updating the ReOps AVS Socket during emergencies; threshold: 1  |
 
 ## External Actors
 | Name                     | Role                         | Address | 
