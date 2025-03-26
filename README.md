@@ -14,7 +14,7 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Apechain](docs/deployments/ape.md)
   - [Soneium](docs/deployments/soneium.md)
   - [Arbitrum](docs/deployments/arbitrum.md)
-
+  - [Berachain](docs/deployments/berachain.md)
 - [ABIs](docs/abis/mainnet) - ABIs of deployed smart contracts at Mainnet
   - [PufferVault](docs/abis/mainnet/PufferVault.json)
   - [PufferDepositor](docs/abis/mainnet/PufferDepositor.json)
