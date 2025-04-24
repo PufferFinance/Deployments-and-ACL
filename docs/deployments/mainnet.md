@@ -2,19 +2,19 @@
 
 | Name                            | Proxy | Implementation | Commit Hash |
 | ------------------------------- | ----- | -------------- |------------- |
-| PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x17D5F2803D9F922fa9C3A77849962df0D19e6674](https://etherscan.io/address/0x17D5F2803D9F922fa9C3A77849962df0D19e6674) | 121913af72a51c34564e998d481c6e7e72b4f0ba  |
+| PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x272e3475347F0A0b6fA50022140EE5704a414D72](https://etherscan.io/address/0x272e3475347F0A0b6fA50022140EE5704a414D72) | 259c921138e8b65289f62f56b2389d72b182d039  |
 | PufferDepositor                 | [0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff](https://etherscan.io/address/0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff) | [0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b](https://etherscan.io/address/0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b) | |
 | Timelock                        | - | [0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) | |
 | AccessManager                   | - | [0x8c1686069474410E6243425f4a10177a94EBEE11](https://etherscan.io/address/0x8c1686069474410E6243425f4a10177a94EBEE11) | |
 | EnclaveVerifier                 | - | [0x1d03e4bCC928795B1EEac1205fa9dDC4a3241D95](https://etherscan.io/address/0x1d03e4bCC928795B1EEac1205fa9dDC4a3241D95) | |
 | GuardianModule                  | - | [0x628b183F248a142A598AA2dcCCD6f7E480a7CcF2](https://etherscan.io/address/0x628b183F248a142A598AA2dcCCD6f7E480a7CcF2) | |
-| PufferModuleManager             | [0x9E1E4fCb49931df5743e659ad910d331735C3860](https://etherscan.io/address/0x9E1E4fCb49931df5743e659ad910d331735C3860) | [0x2c1e236434d7dde1b12a9d97be3a4f77276b1a83](https://etherscan.io/address/0x2c1e236434d7dde1b12a9d97be3a4f77276b1a83) | 6909cf6335e868d01befa84800ed3d0a4df568ae |
+| PufferModuleManager             | [0x9E1E4fCb49931df5743e659ad910d331735C3860](https://etherscan.io/address/0x9E1E4fCb49931df5743e659ad910d331735C3860) | [0x9c713e108aD3f791C1A13b2b29893a26f4F5d042](https://etherscan.io/address/0x9c713e108aD3f791C1A13b2b29893a26f4F5d042) | 259c921138e8b65289f62f56b2389d72b182d039 |
 | PufferOracle                    | - | [0x0BE2aE0edbeBb517541DF217EF0074FC9a9e994f](https://etherscan.io/address/0x0BE2aE0edbeBb517541DF217EF0074FC9a9e994f) | |
 | PufferModuleBeacon              | [0xdd38A5a7789C74fc7F64556fc772343658EEBb04](https://etherscan.io/address/0xdd38A5a7789C74fc7F64556fc772343658EEBb04) | - | |
-| PufferModule                    | - | [0x0C38016881A2E32c7C7CB67b23460CD1f9c50E41](https://etherscan.io/address/0x0C38016881A2E32c7C7CB67b23460CD1f9c50E41) | 6909cf6335e868d01befa84800ed3d0a4df568ae |
+| PufferModule                    | - | [0x181CDaF63623819d2Da7F3dC83d0996402875075](https://etherscan.io/address/0x181CDaF63623819d2Da7F3dC83d0996402875075) | 259c921138e8b65289f62f56b2389d72b182d039 |
 | PufferProtocol                  | [0xf7b6B32492c2e13799D921E84202450131bd238B](https://etherscan.io/address/0xf7b6B32492c2e13799D921E84202450131bd238B) | [0xd05EDf0bc5C2C960A7EB5485c8f965c151DF2B00](https://etherscan.io/address/0xd05EDf0bc5C2C960A7EB5485c8f965c151DF2B00) | |
 | RestakingOperatorBeacon         | [0x6756B856Dd3843C84249a6A31850cB56dB824c4B](https://etherscan.io/address/0x6756B856Dd3843C84249a6A31850cB56dB824c4B) | - | |
-| RestakingOperator               | - | [0xd4106c56b1e1F134e541Ae0C27fEE148bd40D44d](https://etherscan.io/address/0xd4106c56b1e1F134e541Ae0C27fEE148bd40D44d) | 6909cf6335e868d01befa84800ed3d0a4df568ae |
+| RestakingOperator               | - | [0x1c64868Bc4f23f4B8aCe51767a376695dA7bCD13](https://etherscan.io/address/0x1c64868Bc4f23f4B8aCe51767a376695dA7bCD13) | 259c921138e8b65289f62f56b2389d72b182d039 |
 | ValidatorTicket                 | [0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A](https://etherscan.io/address/0x7D26AD6F6BA9D6bA1de0218Ae5e20CD3a273a55A) | [0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d](https://etherscan.io/address/0x2ffd955E7E18B7DB12A269081bEdfca52C48E65d) | |
 | OperationsCoordinator           | - | [0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7](https://etherscan.io/address/0x3feE92765f5cf8F9909A3C89f4907EA5e1CD9BF7) |  |
 | AVSContractsRegistry           | - | [0x1565e55b63675c703fcc3778bd33ea97f7be882f](https://etherscan.io/address/0x1565e55b63675c703fcc3778bd33ea97f7be882f) |  |
@@ -28,7 +28,7 @@
 | CARROT                  | - | [0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6](https://etherscan.io/address/0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6) | c63c542b791f9e1d76b00a328e1c48ce579888c0 |
 | sCARROT                  | - | [0x99C599227C65132822f0290D9e5B4b0430d6c0d6](https://etherscan.io/address/0x99C599227C65132822f0290D9e5B4b0430d6c0d6) | 40b7fccbca1fac383b05dc2bbf3dd2f03280def9 |
 | LockAndReleasePool(Chainlink)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
-
+| RestakingOperatorController   | - | [0x953b4113716CE71596F7Ba6B0E75050c25c493c1](https://etherscan.io/address/0x953b4113716CE71596F7Ba6B0E75050c25c493c1) | 259c921138e8b65289f62f56b2389d72b182d039 |
 
 ## Governance contracts
 | Name                            | Proxy | Implementation |
@@ -71,18 +71,17 @@
 | TellerWithMultiAssetSupport (pufETHs)| - | [0xd049ebeaa59b75ba8ee38f9f6830db7293320236](https://etherscan.io/address/0xd049ebeaa59b75ba8ee38f9f6830db7293320236) |
 
 ## Multisigs
-| Name                            | Address | Description |
-| ------------------------------- | -------------- | ------------ |
-| Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) | - |
-| Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) | - |
-| Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) | - |
-| Puffer's OPERATOR_AVS_SOCKET UPDATER | [0x9584b093A1cc050b5590A41DF88F46f18261b59f](https://etherscan.io/address/0x9584b093A1cc050b5590A41DF88F46f18261b59f) | Responsible for updating the ReOps AVS Socket during emergencies; threshold: 1  |
+| Name                            | Address | 
+| ------------------------------- | -------------- |
+| Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) |
+| Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) |
+| Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) |
 
 ## External Actors
 | Name                     | Role                         | Address | 
 | -------------------------| ---------------------------- | -------------- |
-| Paymaster                | ROLE_ID_OPERATIONS_PAYMASTER | [0x65d2dd7A66a2733a36559fE900A236280A05FBD6](https://etherscan.io/address/0x65d2dd7A66a2733a36559fE900A236280A05FBD6) |
-| Guardian 1               |                              | [0x65d2dd7A66a2733a36559fE900A236280A05FBD6](https://etherscan.io/address/0x65d2dd7A66a2733a36559fE900A236280A05FBD6) |
+| Paymaster / ProofSubmitter                | ROLE_ID_OPERATIONS_PAYMASTER | [0xb4F1f4d59bd7590e92c386083Aa260C1e09cC58b](https://etherscan.io/address/0xb4F1f4d59bd7590e92c386083Aa260C1e09cC58b) |
+| Guardian 1               |                              | [0xb4F1f4d59bd7590e92c386083Aa260C1e09cC58b](https://etherscan.io/address/0xb4F1f4d59bd7590e92c386083Aa260C1e09cC58b) |
 
 ## Restaking
 | PufferModule Name | PufferModule Address | EigenPod Address | RestakingOperator Address <br/>(delegated to) |
