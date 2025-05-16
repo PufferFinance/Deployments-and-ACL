@@ -12,3 +12,4 @@
 | Timelock                     | |[0x281111a564779E35ddb02eBCB66a573C52c4464d](https://bscscan.com/address/0x281111a564779E35ddb02eBCB66a573C52c4464d)
 | AccessManager                     | |[0x8849e9eB8bb27c1916AfB17ee4dEcAd375916474](https://bscscan.com/address/0x8849e9eB8bb27c1916AfB17ee4dEcAd375916474)
 | xPufETH                     | [0x64274835D88F5c0215da8AADd9A5f2D2A2569381](https://bscscan.com/address/0x64274835D88F5c0215da8AADd9A5f2D2A2569381) |[0x17Bc8C62383f2682D6177184E322CC677B23fD65](https://bscscan.com/address/0x17Bc8C62383f2682D6177184E322CC677B23fD65)
+| PUFFER (LayerZero's OFT) | | [0x87d00066cf131ff54B72B134a217D5401E5392b6](https://bscscan.com/address/0x87d00066cf131ff54b72b134a217d5401e5392b6) |
