@@ -30,6 +30,7 @@
 | LockAndReleasePool(Chainlink)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
 | RestakingOperatorController   | - | [0x953b4113716CE71596F7Ba6B0E75050c25c493c1](https://etherscan.io/address/0x953b4113716CE71596F7Ba6B0E75050c25c493c1) | 259c921138e8b65289f62f56b2389d72b182d039 |
 | PUFFERAdapter (LayerZero's OFTAdapter) | - |[0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F](https://etherscan.io/address/0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F) | 
+| pufETHAdapter (LayerZero's OFTAdapter) | - |[0xa4931a9F9Aaf79057334371D6f62164743f97b18](https://etherscan.io/address/0xa4931a9F9Aaf79057334371D6f62164743f97b18) | 
 
 ## Governance contracts
 | Name                            | Proxy | Implementation |
