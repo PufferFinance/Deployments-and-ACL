@@ -29,6 +29,7 @@
 | sCARROT                  | - | [0x99C599227C65132822f0290D9e5B4b0430d6c0d6](https://etherscan.io/address/0x99C599227C65132822f0290D9e5B4b0430d6c0d6) | 40b7fccbca1fac383b05dc2bbf3dd2f03280def9 |
 | LockAndReleasePool(Chainlink)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
 | RestakingOperatorController   | - | [0x953b4113716CE71596F7Ba6B0E75050c25c493c1](https://etherscan.io/address/0x953b4113716CE71596F7Ba6B0E75050c25c493c1) | 259c921138e8b65289f62f56b2389d72b182d039 |
+| PUFFERAdapter (LayerZero's OFTAdapter) | - |[0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F](https://etherscan.io/address/0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F) | 
 
 ## Governance contracts
 | Name                            | Proxy | Implementation |
