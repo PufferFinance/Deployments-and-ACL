@@ -2,7 +2,7 @@
 
 | Name                            | Proxy | Implementation | Commit Hash |
 | ------------------------------- | ----- | -------------- |------------- |
-| PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x272e3475347F0A0b6fA50022140EE5704a414D72](https://etherscan.io/address/0x272e3475347F0A0b6fA50022140EE5704a414D72) | 259c921138e8b65289f62f56b2389d72b182d039  |
+| PufferVault                     | [0xD9A442856C234a39a81a089C06451EBAa4306a72](https://etherscan.io/address/0xD9A442856C234a39a81a089C06451EBAa4306a72) | [0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa](https://etherscan.io/address/0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa) | 71d50fe57bf11a0b6d00fe033d1df895f62c2022  |
 | PufferDepositor                 | [0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff](https://etherscan.io/address/0x4aa799c5dfc01ee7d790e3bf1a7c2257ce1dceff) | [0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b](https://etherscan.io/address/0x8c9517A9E99c74cd072A118D3dC6b4f3217F8B9b) | |
 | Timelock                        | - | [0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA](https://etherscan.io/address/0x3C28B7c7Ba1A1f55c9Ce66b263B33B204f2126eA) | |
 | AccessManager                   | - | [0x8c1686069474410E6243425f4a10177a94EBEE11](https://etherscan.io/address/0x8c1686069474410E6243425f4a10177a94EBEE11) | |
