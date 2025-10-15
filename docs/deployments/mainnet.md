@@ -27,6 +27,7 @@
 | PufferRevenueDepositor                 | [0x21660F4681aD5B6039007f7006b5ab0EF9dE7882](https://etherscan.io/address/0x21660F4681aD5B6039007f7006b5ab0EF9dE7882) | [0xd7b4a10ece470208661f111f3546f09693a62d3e](https://etherscan.io/address/0xd7b4a10ece470208661f111f3546f09693a62d3e) |  |
 | CARROT                  | - | [0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6](https://etherscan.io/address/0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6) | c63c542b791f9e1d76b00a328e1c48ce579888c0 |
 | sCARROT                  | - | [0x99C599227C65132822f0290D9e5B4b0430d6c0d6](https://etherscan.io/address/0x99C599227C65132822f0290D9e5B4b0430d6c0d6) | 40b7fccbca1fac383b05dc2bbf3dd2f03280def9 |
+| CarrotVesting            | [0xff00c2dd07d811bea632cb9f9e4919dd6fcbc82b](https://etherscan.io/address/0xff00c2dd07d811bea632cb9f9e4919dd6fcbc82b) | [0x61fd3f0d2010afcfb0e006746c36569f97b1d22a](https://etherscan.io/address/0x61fd3f0d2010afcfb0e006746c36569f97b1d22a) | b62e74d30764a52e3fc75a2f658a8a10fd57b700 |
 | LockAndReleasePool(Chainlink)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
 | RestakingOperatorController   | - | [0x953b4113716CE71596F7Ba6B0E75050c25c493c1](https://etherscan.io/address/0x953b4113716CE71596F7Ba6B0E75050c25c493c1) | 259c921138e8b65289f62f56b2389d72b182d039 |
 | PUFFERAdapter (LayerZero's OFTAdapter) | - |[0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F](https://etherscan.io/address/0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F) | 
@@ -36,6 +37,8 @@
 | Name                            | Proxy | Implementation |
 | ------------------------------- | ----- | -------------- |
 | PUFFER Token                     | - | [0x4d1C297d39C5c1277964D0E3f8Aa901493664530](https://etherscan.io/address/0x4d1C297d39C5c1277964D0E3f8Aa901493664530) 
+| vlPUFFER Contract                     | - | [0x1e168460ea0cf3f126ddd3183dc2e376515a5e91](https://etherscan.io/address/0x1e168460ea0cf3f126ddd3183dc2e376515a5e91)
+| GaugeRegistry                     | - | [0x27EF0BC5EAa61dC6E7D08f17Eb00De7D94398a25](https://etherscan.io/address/0x27EF0BC5EAa61dC6E7D08f17Eb00De7D94398a25)
 | vePUFFER Contract                     | [0xA55eD5808aeCDF23AE3782C1443185f5D2363ce7](https://etherscan.io/address/0xA55eD5808aeCDF23AE3782C1443185f5D2363ce7) | [0x218431F9EddE0ad29134FF5316258C7eeeDbD516](https://etherscan.io/address/0x218431F9EddE0ad29134FF5316258C7eeeDbD516)
 | DAO                     | [0x5dEA8E499b05de8F86E7521F039770268055b23F](https://etherscan.io/address/0x5dEA8E499b05de8F86E7521F039770268055b23F) | [0x52Af16664155608b845BE18aa29620EbF6eA2D3a](https://etherscan.io/address/0x52Af16664155608b845BE18aa29620EbF6eA2D3a)
 | DAO Multisig (temporary)                     | [0xA303C435563a4544a84E26501F4666346Ff73a0d](https://etherscan.io/address/0xA303C435563a4544a84E26501F4666346Ff73a0d) | [0xcEd33DF91AC49415c74BF1b5c218B83a2B8C2f3C](https://etherscan.io/address/0xcEd33DF91AC49415c74BF1b5c218B83a2B8C2f3C)
@@ -78,6 +81,7 @@
 | Pauser Multisig                | [0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4](https://etherscan.io/address/0x1ba8e3aA853F73ae8093E26B7B8F2520c3620Df4) |
 | Community Multisig                | [0x446d4d6b26815f9bA78B5D454E303315D586Cb2a](https://etherscan.io/address/0x446d4d6b26815f9bA78B5D454E303315D586Cb2a) |
 | Operations Multisig                | [0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d](https://etherscan.io/address/0xC0896ab1A8cae8c2C1d27d011eb955Cca955580d) |
+| Gauges Safe Multisig                     | [0xB33F87F2486165C59B735b7c8b3f5489Bfca78c4](https://etherscan.io/address/0xB33F87F2486165C59B735b7c8b3f5489Bfca78c4)|
 
 ## External Actors
 | Name                     | Role                         | Address | 
