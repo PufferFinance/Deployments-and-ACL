@@ -1,4 +1,4 @@
-# Hoodi Deployments
+# Hoodi Deployments - Standard
 
 | Name                        | Proxy                                                                                                                       | Implementation                                                                                                              | Commit hash |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -28,3 +28,40 @@
 | PufferModule Name |                                     PufferModule Address                                      |                                       EigenPod Address                                        | RestakingOperator Address <br/>(delegated to) |
 | :---------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------: |
 | `PUFFER_MODULE_0` | [0x1C89...1fF](https://hoodi.etherscan.io/address/0x1C898d25BC7B2819E8F0Af53A5a956F071f971fF) | [0xE7FD...24d](https://hoodi.etherscan.io/address/0xE7FDd7769f369cd1534Cb727A812Bce04553b24d) |                       -                       |
+
+<br/>
+<br/>
+
+---
+
+<br/>
+<br/>
+
+# Hoodi Deployments - No guardians
+
+| Name                        | Proxy                                                                                                                       | Implementation                                                                                                              | Commit hash |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| PufferVault (pufETH)        | [0xe8870da7ceabDC16016bdF22b1528cA7625Dbc9C](https://hoodi.etherscan.io/address/0xe8870da7ceabDC16016bdF22b1528cA7625Dbc9C) | [0xFC03FCa92510A27C0D11799ab9bdeF7aAA3bb907](https://hoodi.etherscan.io/address/0xFC03FCa92510A27C0D11799ab9bdeF7aAA3bb907) |             |
+| PufferDepositor             | [0x17F59c077Ae609afA34633408562510CE7b1C336](https://hoodi.etherscan.io/address/0x17F59c077Ae609afA34633408562510CE7b1C336) | [0x192E2676e8292498D6fd7B5fd4Ff9c73C1297370](https://hoodi.etherscan.io/address/0x192E2676e8292498D6fd7B5fd4Ff9c73C1297370) |             |
+| AccessManager               | -                                                                                                                           | [0x77D6694E1B6a86760036Febe78315363ccA402ae](https://hoodi.etherscan.io/address/0x77D6694E1B6a86760036Febe78315363ccA402ae) |             |
+| ValidatorTicket             | [0x2246a5CF6050F6980719a62b53D6261e35650fdd](https://hoodi.etherscan.io/address/0x2246a5CF6050F6980719a62b53D6261e35650fdd) | [0xdcd36D322866C4C6b49E8f82867147D599c7a3FF](https://hoodi.etherscan.io/address/0xdcd36D322866C4C6b49E8f82867147D599c7a3FF) |             |
+| PufferProtocol              | [0x9D362e5CA054e03aa27327732b764F2104334942](https://hoodi.etherscan.io/address/0x9D362e5CA054e03aa27327732b764F2104334942) | [0x9F641051f87737D0467b4411b644fC6db6E7300F](https://hoodi.etherscan.io/address/0x9F641051f87737D0467b4411b644fC6db6E7300F) |             |
+| PufferModuleManager         | [0xCf6265030F12ebd79541F8fD6bBb2AfB3359e5D1](https://hoodi.etherscan.io/address/0xCf6265030F12ebd79541F8fD6bBb2AfB3359e5D1) | [0x900c4D9003a6e90dF64163100E997cBd4d7913B4](https://hoodi.etherscan.io/address/0x900c4D9003a6e90dF64163100E997cBd4d7913B4) |             |
+| PufferModule                | -                                                                                                                           | [0x0cf7cfa8a3b3c4e2a41c88917f835553abff8ab8](https://hoodi.etherscan.io/address/0x0cf7cfa8a3b3c4e2a41c88917f835553abff8ab8) |             |
+| PufferModuleBeacon          | [0xE526d80Dc834371f11B64A491d8f654a46e86Fc9](https://hoodi.etherscan.io/address/0xE526d80Dc834371f11B64A491d8f654a46e86Fc9) | -                                                                                                                           |             |
+| PufferOracle                | -                                                                                                                           | [0x87ec630a808fe748bede5faD5E2621B7C84047C6](https://hoodi.etherscan.io/address/0x87ec630a808fe748bede5faD5E2621B7C84047C6) |             |
+| RestakingOperatorController | -                                                                                                                           | [0x309bED770Ef408F258F75139CE44237AD29536d8](https://hoodi.etherscan.io/address/0x309bED770Ef408F258F75139CE44237AD29536d8) |             |
+| RestakingOperator           | -                                                                                                                           | [0xE6518d6d43fb2Fc052552fdc7981cA4B5fFD0751](https://hoodi.etherscan.io/address/0xE6518d6d43fb2Fc052552fdc7981cA4B5fFD0751) |             |
+| RestakingOperatorBeacon     | [0xdfB311149d4d576c74d2ff5DBa22C332d727E7fC](https://hoodi.etherscan.io/address/0xdfB311149d4d576c74d2ff5DBa22C332d727E7fC) | -                                                                                                                           |             |
+| OperationsCoordinator       | -                                                                                                                           | [0x268658Fc9B9F16b9f92801fE0a450935879c8EE7](https://hoodi.etherscan.io/address/0x268658Fc9B9F16b9f92801fE0a450935879c8EE7) |             |
+| WETH                        | -                                                                                                                           | [0x5085c41eD4D7277d5aC50C6f30e00856A1916a39](https://hoodi.etherscan.io/address/0x5085c41eD4D7277d5aC50C6f30e00856A1916a39) |             |
+| AVSContractsRegistry        | -                                                                                                                           | [0x0D07Bb44A56c2c047C01293061d0DC589adAe18e](https://hoodi.etherscan.io/address/0x0D07Bb44A56c2c047C01293061d0DC589adAe18e) |             |
+| Timelock                    | -                                                                                                                           | [0x9fd9F64ef38C90021996AB97B4514008770Dd5F0](https://hoodi.etherscan.io/address/0x9fd9F64ef38C90021996AB97B4514008770Dd5F0) |             |
+| ValidatorTicketPricer       | -                                                                                                                           | [0xD732762F3E7D8c7C7126c63E50ec98fe8DEF04FD](https://hoodi.etherscan.io/address/0xD732762F3E7D8c7C7126c63E50ec98fe8DEF04FD) |             |
+|                             |
+
+## Restaking
+
+| PufferModule Name |                                      PufferModule Address                                       |                                       EigenPod Address                                        | RestakingOperator Address <br/>(delegated to) |
+| :---------------: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------: |
+| `PUFFER_MODULE_0` | [0x0xE3Cf...135](https://hoodi.etherscan.io/address/0xE3Cf98C52E20794582E7Edc25cC9Da60C2E70135) | [0x7E87...f6C](https://hoodi.etherscan.io/address/0x7E87a4ead92C04569dBc510966d53eC0e8527f6C) |                       -                       |
