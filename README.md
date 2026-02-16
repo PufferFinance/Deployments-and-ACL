@@ -15,6 +15,7 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Soneium](docs/deployments/soneium.md)
   - [Arbitrum](docs/deployments/arbitrum.md)
   - [Berachain](docs/deployments/berachain.md)
+  - [MegaETH](docs/deployments/megaeth.md)
 
 - [Access Control](docs/access-control/) - Access control details for various contracts.
   - [Actors and Roles](docs/access-control/actors_and_roles.md) - Description of roles and permissions within the system.
