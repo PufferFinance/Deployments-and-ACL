@@ -7,6 +7,7 @@ This document provides lists of the latest deployments of the Puffer Protocol co
 - [Deployment Records](docs/deployments/) - Deployment details for various networks.
   - [Mainnet](docs/deployments/mainnet.md)
   - [Holesky](docs/deployments/holesky.md)
+  - [Hoodi](docs/deployments/hoodi.md)
   - [Scroll](docs/deployments/scroll.md)
   - [Base](docs/deployments/base.md)
   - [Binance Smart Chain](docs/deployments/bsc.md)
@@ -21,5 +22,3 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Actors and Roles](docs/access-control/actors_and_roles.md) - Description of roles and permissions within the system.
   - [Contracts and Functions](docs/access-control/contracts_and_functions.md) - Description of contracts, functions and their associated roles within the system.
   - [Function Selectors](docs/access-control/functionSelectors.md) - List of function selectors/signatures in the contracts.
-
-
