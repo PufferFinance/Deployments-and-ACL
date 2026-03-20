@@ -146,3 +146,9 @@
 | PufferModule Name |                                      PufferModule Address                                      |                                        EigenPod Address                                        | RestakingOperator Address <br/>(delegated to) |
 | :---------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :-------------------------------------------: |
 | `PUFFER_MODULE_0` | [0xcabe...Fb20](https://hoodi.etherscan.io/address/0xcabed454A76f1d6CB41241dDD8361312b949Fb20) | [0x8549...726e](https://hoodi.etherscan.io/address/0x8549C205aAA07Ec5A47DcC55Ea38299b31Fa726e) |                       -                       |
+
+## Permissioned Modules
+
+| PermissionedModule Name |                                   PermissionedModule Address                                   | EigenPod Address                                                                                | RestakingOperator Address <br/>(delegated to) |
+| :---------------------: | :--------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `PERMISSIONED_MODULE_0` | [0x2849...d577](https://hoodi.etherscan.io/address/0x284950eCFcC74fC1932b4D3b16518ac4a77cd577) | [0x7607...1AAc ](https://hoodi.etherscan.io/address/0x76070A9A531Ab07bB1589C88A63E396487241AAc) | -                                             |
