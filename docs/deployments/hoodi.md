@@ -96,6 +96,7 @@
 | AVSContractsRegistry        | -                                                                                                                           | [0x58c3FCfdB032Fca20786C779bcD1026A79e94Def](https://hoodi.etherscan.io/address/0x58c3FCfdB032Fca20786C779bcD1026A79e94Def) | 62178552872e809b232084c13803165760ee9ef9 |
 | Timelock                    | -                                                                                                                           | [0x6D1D7F0a2f2aD141717505c95F470bd716C1A31a](https://hoodi.etherscan.io/address/0x6D1D7F0a2f2aD141717505c95F470bd716C1A31a) | 62178552872e809b232084c13803165760ee9ef9 |
 | ValidatorTicketPricer       | -                                                                                                                           | [0x203C22cC1552e2910e2A2a995159E74cFc52061E](https://hoodi.etherscan.io/address/0x203C22cC1552e2910e2A2a995159E74cFc52061E) | 62178552872e809b232084c13803165760ee9ef9 |
+| PufferWithdrawalManager     | [0xfaE0D8643ebE5a9776661DF4bE8Aea61919177Ef](https://hoodi.etherscan.io/address/0xfaE0D8643ebE5a9776661DF4bE8Aea61919177Ef) | [0x9f2839edDB2Be5D50aBd3E1D49A33DaBe6Ae9dfd](https://hoodi.etherscan.io/address/0x9f2839edDB2Be5D50aBd3E1D49A33DaBe6Ae9dfd) | 19420499b6b80b0dbd94878e33a8c43e729e9e87 |
 |                             |
 
 ## Restaking
