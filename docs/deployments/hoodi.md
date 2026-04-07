@@ -101,9 +101,9 @@
 
 ## Restaking
 
-| PufferModule Name |                                      PufferModule Address                                      |                                        EigenPod Address                                        | RestakingOperator Address <br/>(delegated to) |
-| :---------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :-------------------------------------------: |
-| `PUFFER_MODULE_0` | [0x1086...83C5](https://hoodi.etherscan.io/address/0x1086349d358fa589641e8a7440d46E5EE8A683C5) | [0x8F0b...43e0](https://hoodi.etherscan.io/address/0x8F0b1e0B974C8b91D69C6A62E0710e3F497943e0) |                       -                       |
+| PufferModule Name |                                      PufferModule Address                                      |                                        EigenPod Address                                        |                         RestakingOperator Address <br/>(delegated to)                          |
+| :---------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+| `PUFFER_MODULE_0` | [0x1086...83C5](https://hoodi.etherscan.io/address/0x1086349d358fa589641e8a7440d46E5EE8A683C5) | [0x8F0b...43e0](https://hoodi.etherscan.io/address/0x8F0b1e0B974C8b91D69C6A62E0710e3F497943e0) | [0x54a8...24D8](https://hoodi.etherscan.io/address/0x54a8A0aab9C6E735199813703c7F5853f4Ca24D8) |
 
 <br/>
 <br/>
