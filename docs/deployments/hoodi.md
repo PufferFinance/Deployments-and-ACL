@@ -22,7 +22,7 @@
 | Timelock                    | -                                                                                                                           | [0xA7A7C971B320f8B9F9557D49Ad5d988A668acD86](https://hoodi.etherscan.io/address/0xA7A7C971B320f8B9F9557D49Ad5d988A668acD86) |             |
 | ValidatorTicketPricer       | -                                                                                                                           | [0x1654aD30E3CA6799E02f4fe1ad21bF80A12F5713](https://hoodi.etherscan.io/address/0x1654aD30E3CA6799E02f4fe1ad21bF80A12F5713) |             |
 | PauserContract              | -                                                                                                                           | [0x843d94aDD123eDB1E79fDc05625B20C9c3854bfD](https://hoodi.etherscan.io/address/0x843d94aDD123eDB1E79fDc05625B20C9c3854bfD) |             |
-| PufferWithdrawalManager     | -                                                                                                                           | [0xAe38720Dc36eddb4ed2BE286cedcE9e6Aebd4648](https://hoodi.etherscan.io/address/0xAe38720Dc36eddb4ed2BE286cedcE9e6Aebd4648) |             |
+| PufferWithdrawalManager     | [0x42F14ABDFeEC42809C9552050Ae40753B387f7D0](https://hoodi.etherscan.io/address/0x42F14ABDFeEC42809C9552050Ae40753B387f7D0) | [0x62d7c77460F7a3f420991Fcd27d58476418F6176](https://hoodi.etherscan.io/address/0x62d7c77460F7a3f420991Fcd27d58476418F6176) |             |
 |                             |
 
 ## Restaking
