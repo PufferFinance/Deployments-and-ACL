@@ -1,8 +1,12 @@
 # Monad Deployments
 
+> ⚠️ **DEPRECATED — LayerZero pufETH lane closed.** The OFT below is deployed but dormant.
+
+> Note: LayerZero EndpointV2 here is `0x6F475642a6e85809B1c36Fa62763669b1b48DD5B` (non-standard).
+
 | Name                          | Proxy | Implementation |
 | ----------------------------- | ----- | -------------- |
-| pufETH (LayerZero's OFT) | | [0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF](https://mainnet-beta.monvision.io/address/0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF) |
+| pufETH (LayerZero's OFT — dormant) | | [0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF](https://mainnet-beta.monvision.io/address/0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF) |
 
 ## Multisigs
 | Name                            | Address |
