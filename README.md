@@ -11,11 +11,15 @@ This document provides lists of the latest deployments of the Puffer Protocol co
   - [Base](docs/deployments/base.md)
   - [Binance Smart Chain](docs/deployments/bsc.md)
   - [Zircuit](docs/deployments/zircuit.md)
-  - [Apechain](docs/deployments/ape.md)
   - [Soneium](docs/deployments/soneium.md)
   - [Arbitrum](docs/deployments/arbitrum.md)
   - [Berachain](docs/deployments/berachain.md)
-  - [MegaETH](docs/deployments/megaeth.md)
+  - [Linea](docs/deployments/linea.md)
+  - [TAC](docs/deployments/tac.md)
+  - [Apechain](docs/deployments/ape.md) — **deprecated** (no active bridge)
+  - [HyperEVM](docs/deployments/hyperEVM.md) — **deprecated** (LayerZero lane closed)
+  - [MegaETH](docs/deployments/megaeth.md) — **deprecated** (LayerZero lane closed)
+  - [Monad](docs/deployments/monad.md) — **deprecated** (LayerZero lane closed)
 
 - [Access Control](docs/access-control/) - Access control details for various contracts.
   - [Actors and Roles](docs/access-control/actors_and_roles.md) - Description of roles and permissions within the system.

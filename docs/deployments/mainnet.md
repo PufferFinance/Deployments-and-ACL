@@ -20,18 +20,27 @@
 | AVSContractsRegistry           | - | [0x1565e55b63675c703fcc3778bd33ea97f7be882f](https://etherscan.io/address/0x1565e55b63675c703fcc3778bd33ea97f7be882f) |  |
 | L1CustomERC20Gateway (Scroll)   | [0xA033Ff09f2da45f0e9ae495f525363722Df42b2a](https://etherscan.io/address/0xA033Ff09f2da45f0e9ae495f525363722Df42b2a) |   -   |  |
 | ValidatorTicketPricer   | [0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3](https://etherscan.io/address/0x9830aD1bD5Cf73640e253EdF97DeE3791C4a53C3) |  -    |  |
-| xPufETH   | [0xD7D2802f6b19843ac4DfE25022771FD83b5A7464](https://etherscan.io/address/0xD7D2802f6b19843ac4DfE25022771FD83b5A7464) |  [0x851040181734FEeC147C9FF878c921fDd7228942](https://etherscan.io/address/0x851040181734FEeC147C9FF878c921fDd7228942)    |  |
-| xERC20Lockbox   | [0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5](https://etherscan.io/address/0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5) |  -    |  |
+| xPufETH (legacy Connext xERC20 — backs mainnet holders only)   | [0xD7D2802f6b19843ac4DfE25022771FD83b5A7464](https://etherscan.io/address/0xD7D2802f6b19843ac4DfE25022771FD83b5A7464) |  [0x851040181734FEeC147C9FF878c921fDd7228942](https://etherscan.io/address/0x851040181734FEeC147C9FF878c921fDd7228942)    |  |
+| xERC20Lockbox (legacy Connext — redeem 1:1 only)   | [0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5](https://etherscan.io/address/0xd44E91CfBBAa7b3B259A12a43b38CEBf47B463D5) |  -    |  |
 | L1RewardManager                 | [0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b](https://etherscan.io/address/0x157788cc028Ac6405bD406f2D1e0A8A22b3cf17b) | [0xc9b0813d9e7f45b5bce84a24f07f33ec6de0b583](https://etherscan.io/address/0xc9b0813d9e7f45b5bce84a24f07f33ec6de0b583) | dc1edc97b33bf8049e2ba890de9fd6f7a9433d1e |
 | PufferWithdrawalManager                 | [0xDdA0483184E75a5579ef9635ED14BacCf9d50283](https://etherscan.io/address/0xDdA0483184E75a5579ef9635ED14BacCf9d50283) | [0x98E1d95B4b3A5A082642e17274D67d62691288F1](https://etherscan.io/address/0x98E1d95B4b3A5A082642e17274D67d62691288F1) | e17dcff9b299a4ac6043983b829e6ee57bea957a |
 | PufferRevenueDepositor                 | [0x21660F4681aD5B6039007f7006b5ab0EF9dE7882](https://etherscan.io/address/0x21660F4681aD5B6039007f7006b5ab0EF9dE7882) | [0xd7b4a10ece470208661f111f3546f09693a62d3e](https://etherscan.io/address/0xd7b4a10ece470208661f111f3546f09693a62d3e) |  |
 | CARROT                  | - | [0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6](https://etherscan.io/address/0x282A69142bac47855C3fbE1693FcC4bA3B4d5Ed6) | c63c542b791f9e1d76b00a328e1c48ce579888c0 |
 | sCARROT                  | - | [0x99C599227C65132822f0290D9e5B4b0430d6c0d6](https://etherscan.io/address/0x99C599227C65132822f0290D9e5B4b0430d6c0d6) | 40b7fccbca1fac383b05dc2bbf3dd2f03280def9 |
 | CarrotVesting                   | [0xff00c2dd07d811bea632cb9f9e4919dd6fcbc82b](https://etherscan.io/address/0xff00c2dd07d811bea632cb9f9e4919dd6fcbc82b) | [0x27b645650dA5d2fbC7E1648083E4063CE9fdF449](https://etherscan.io/address/0x27b645650dA5d2fbC7E1648083E4063CE9fdF449) | 5ebdeaace5706e98a63fe8916208039609c58373 |
-| LockAndReleasePool(Chainlink)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
+| LockAndReleasePool (Chainlink CCIP, pufETH)                  | - | [0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3](https://etherscan.io/address/0xBc1324F4FaB8e63bF33E5117bb887671B378BFF3) | 134cceedff27f2b429d03ffd1cd58ef3c282e20d |
 | RestakingOperatorController   | - | [0x953b4113716CE71596F7Ba6B0E75050c25c493c1](https://etherscan.io/address/0x953b4113716CE71596F7Ba6B0E75050c25c493c1) | 259c921138e8b65289f62f56b2389d72b182d039 |
 | PUFFERAdapter (LayerZero's OFTAdapter) | - |[0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F](https://etherscan.io/address/0x3Ea9bb9fcDCC1C37cB09175aecdb488A97EDd83F) | 
 | pufETHAdapter (LayerZero's OFTAdapter) | - |[0xa4931a9F9Aaf79057334371D6f62164743f97b18](https://etherscan.io/address/0xa4931a9F9Aaf79057334371D6f62164743f97b18) | 
+
+### Bridges
+
+Mainnet is the hub; every other chain bridges only to and from mainnet.
+
+- **Chainlink CCIP (pufETH)** — `LockAndReleasePool` ↔ Arbitrum, Berachain, Soneium, Zircuit, Base, BSC.
+- **LayerZero** — `pufETHAdapter` ↔ Base, Linea, TAC; `PUFFERAdapter` ↔ Base, BSC.
+- **Deprecated** — Connext/Everclear (mainnet xPufETH + lockbox kept for 1:1 redemption only);
+  LayerZero lanes to HyperEVM, Monad, MegaETH; Ape Chain.
 
 ## Governance contracts
 | Name                            | Proxy | Implementation |

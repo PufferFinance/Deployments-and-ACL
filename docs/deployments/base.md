@@ -9,6 +9,9 @@
 | L2RewardManager                 | [0xF9Dd335bF363b2E4ecFe3c94A86EBD7Dd3Dcf0e7](https://basescan.org/address/0xF9Dd335bF363b2E4ecFe3c94A86EBD7Dd3Dcf0e7) | [0x3b883b1017f5e9a33af53b1f750b4ae39a9564fa](https://basescan.org/address/0x3b883b1017f5e9a33af53b1f750b4ae39a9564fa) | dc1edc97b33bf8049e2ba890de9fd6f7a9433d1e |
 | PUFFER (LayerZero OFT)          | - | [0x8dA0baE597aC15fB0924713b1e3c1F624474F3E4](https://basescan.org/address/0x8dA0baE597aC15fB0924713b1e3c1F624474F3E4) | - |
 | pufETH (LayerZero OFT)          | - | [0x30D91DF53cCCf07e3a5BF6862Db8CFBe1fCB21d3](https://basescan.org/address/0x30D91DF53cCCf07e3a5BF6862Db8CFBe1fCB21d3) | - |
+| BurnWithFromMintTokenPool (Chainlink CCIP, over xPufETH) | - | [0xd1E158549d79c1768170bD694DCbA9C9f60eE2b8](https://basescan.org/address/0xd1E158549d79c1768170bD694DCbA9C9f60eE2b8) | - |
+
+> CCIP bridge (pufETH over xPufETH): live, **one-way Base → Ethereum** only.
 
 ## Multisigs
 | Name                            | Address |

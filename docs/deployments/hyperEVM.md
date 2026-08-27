@@ -1,8 +1,10 @@
 # HyperEVM Deployments
 
+> ⚠️ **DEPRECATED — LayerZero pufETH lane closed.** The OFT below is deployed but dormant.
+
 | Name                          | Proxy | Implementation |
 | ----------------------------- | ----- | -------------- |
-| pufETH (LayerZero's OFT) | | [0x87d00066cf131ff54B72B134a217D5401E5392b6](https://www.hyperscan.com/address/0x87d00066cf131ff54B72B134a217D5401E5392b6) |
+| pufETH (LayerZero's OFT — dormant) | | [0x87d00066cf131ff54B72B134a217D5401E5392b6](https://www.hyperscan.com/address/0x87d00066cf131ff54B72B134a217D5401E5392b6) |
 
 
 
