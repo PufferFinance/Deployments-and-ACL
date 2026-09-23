@@ -155,3 +155,66 @@
 | PermissionedModule Name |                                   PermissionedModule Address                                   | EigenPod Address                                                                                | RestakingOperator Address <br/>(delegated to) |
 | :---------------------: | :--------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | `PERMISSIONED_MODULE_0` | [0x2849...d577](https://hoodi.etherscan.io/address/0x284950eCFcC74fC1932b4D3b16518ac4a77cd577) | [0x7607...1AAc ](https://hoodi.etherscan.io/address/0x76070A9A531Ab07bB1589C88A63E396487241AAc) | -                                             |
+
+<br/>
+<br/>
+
+---
+
+<br/>
+<br/>
+
+# Hoodi Deployments - Upgrade Rehearsal Baseline
+
+Deployed **2026-09-22** as the pre-upgrade baseline for rehearsing the
+`audit/combined-2026-05` mainnet upgrade. Source: tag `hoodi` (`46c3781`) for
+`src/`, deployed at commit `b112e71` (script-only changes on top). Blocks
+3675023-3675081.
+
+This is a **rehearsal fixture, not a normal testnet deployment**. Before relying on
+anything here, note:
+
+- Every role sits on the dev wallet `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`:
+  all three Timelock seats (community / operations / pauser), plus AccessManager
+  roles 0 (ADMIN), 1 (UPGRADER), 22, 23 and 77. Timelock `delay` is 604801, the
+  same as mainnet.
+- The deployer intentionally still holds `ADMIN_ROLE` and `ROLE_ID_UPGRADER`;
+  revoking them is a later step of the rehearsal.
+- `EnclaveVerifier.FRESHNESS_BLOCKS` is **100000000**, deliberately past the chain
+  head, so canned RAVE evidence can register a guardian enclave key without SGX
+  hardware. Testnet only - it makes attestations replayable forever.
+- stETH and WETH are mocks. WETH here is **not** the canonical Hoodi WETH: the
+  vault's `_WETH` immutable points at the mock below.
+- `PauserContract` does not exist at this commit (it arrives with the upgrade), and
+  `PufferWithdrawalManager` has not been deployed yet.
+
+| Name                        | Proxy | Implementation | Commit hash |
+| --------------------------- | --- | --- | --- |
+| PufferVault (pufETH)        | [0xfD542fDC42F1BF271d94805eBb9f2a8b45E977fc](https://hoodi.etherscan.io/address/0xfD542fDC42F1BF271d94805eBb9f2a8b45E977fc) | [0x53e70F18f74a5127132f43f9182C7E417Dc56bB5](https://hoodi.etherscan.io/address/0x53e70F18f74a5127132f43f9182C7E417Dc56bB5) | b112e71 |
+| PufferDepositor             | [0x0d49f7437a4FA376298a9F12C393Cea489e82221](https://hoodi.etherscan.io/address/0x0d49f7437a4FA376298a9F12C393Cea489e82221) | [0xC96ebAE6eBfe6AcA4c4E86c2Be4865f11619e96e](https://hoodi.etherscan.io/address/0xC96ebAE6eBfe6AcA4c4E86c2Be4865f11619e96e) | b112e71 |
+| AccessManager               | - | [0xD6565BcCdecCe3906c9Bc744d61A78040Ad3493C](https://hoodi.etherscan.io/address/0xD6565BcCdecCe3906c9Bc744d61A78040Ad3493C) | b112e71 |
+| GuardianModule              | - | [0x90dce89651bA34beDd0E178d7314e66921E50800](https://hoodi.etherscan.io/address/0x90dce89651bA34beDd0E178d7314e66921E50800) | b112e71 |
+| ValidatorTicket             | [0xE5e7250478F11Bb93aFD8BE2d500eF1A2004DC01](https://hoodi.etherscan.io/address/0xE5e7250478F11Bb93aFD8BE2d500eF1A2004DC01) | [0xc9ed3495eB99615886a410909900CfB0B8010236](https://hoodi.etherscan.io/address/0xc9ed3495eB99615886a410909900CfB0B8010236) | b112e71 |
+| PufferProtocol              | [0x6E2bb8d0E49BCC3aa513511Dc09c116085a179a9](https://hoodi.etherscan.io/address/0x6E2bb8d0E49BCC3aa513511Dc09c116085a179a9) | [0x6687d9581238947a66Da5cE707e87492F24246d9](https://hoodi.etherscan.io/address/0x6687d9581238947a66Da5cE707e87492F24246d9) | b112e71 |
+| PufferModuleManager         | [0x32e2f230B200fe850005d1BB64F0a31bE542A729](https://hoodi.etherscan.io/address/0x32e2f230B200fe850005d1BB64F0a31bE542A729) | [0xFAB167Dee1Be67dA5AB9C42a78a0de80dce387C4](https://hoodi.etherscan.io/address/0xFAB167Dee1Be67dA5AB9C42a78a0de80dce387C4) | b112e71 |
+| PufferModule                | - | [0xC98377e0FC445B926ED9346DA08850584ad103b2](https://hoodi.etherscan.io/address/0xC98377e0FC445B926ED9346DA08850584ad103b2) | b112e71 |
+| PufferModuleBeacon          | [0x0Ca1E46798f29496E7bcbe3881e96F7B1674cfCC](https://hoodi.etherscan.io/address/0x0Ca1E46798f29496E7bcbe3881e96F7B1674cfCC) | - | b112e71 |
+| EnclaveVerifier             | - | [0x825da9EB497fEae18543D3D87f983A1f8D393Fd1](https://hoodi.etherscan.io/address/0x825da9EB497fEae18543D3D87f983A1f8D393Fd1) | b112e71 |
+| PufferOracle                | - | [0x0C10523B5bB94114Ce9630E7BD202aa0E31e146E](https://hoodi.etherscan.io/address/0x0C10523B5bB94114Ce9630E7BD202aa0E31e146E) | b112e71 |
+| RestakingOperatorController | - | [0x477E5bC5d20185Cb31BD16dd59447E1b22f8a62A](https://hoodi.etherscan.io/address/0x477E5bC5d20185Cb31BD16dd59447E1b22f8a62A) | b112e71 |
+| RestakingOperator           | - | [0xC568C6ab930409E6D375d9Ec4EC8957d807B3B32](https://hoodi.etherscan.io/address/0xC568C6ab930409E6D375d9Ec4EC8957d807B3B32) | b112e71 |
+| RestakingOperatorBeacon     | [0x50Ab6a1cCBbB3980F23F30A8dd171048E7Aaa4F1](https://hoodi.etherscan.io/address/0x50Ab6a1cCBbB3980F23F30A8dd171048E7Aaa4F1) | - | b112e71 |
+| OperationsCoordinator       | - | [0x65176a65BAD9687A13750b1dBaaA8adfb995Bd43](https://hoodi.etherscan.io/address/0x65176a65BAD9687A13750b1dBaaA8adfb995Bd43) | b112e71 |
+| PufferRevenueDepositor      | [0x9b08DF880B191FB33827Ee63cf859DD669376Eb4](https://hoodi.etherscan.io/address/0x9b08DF880B191FB33827Ee63cf859DD669376Eb4) | [0x94809aB3f3c1005925fE0115B9Dc32F5b1241d71](https://hoodi.etherscan.io/address/0x94809aB3f3c1005925fE0115B9Dc32F5b1241d71) | b112e71 |
+| AVSContractsRegistry        | - | [0xbE269146A8b887E3f2331ADbdC16f171Aa67c9Bd](https://hoodi.etherscan.io/address/0xbE269146A8b887E3f2331ADbdC16f171Aa67c9Bd) | b112e71 |
+| Timelock                    | - | [0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9](https://hoodi.etherscan.io/address/0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9) | b112e71 |
+| ValidatorTicketPricer       | - | [0x12409Ab8E9Eca443093Df4fbB8b15CE99175E5a3](https://hoodi.etherscan.io/address/0x12409Ab8E9Eca443093Df4fbB8b15CE99175E5a3) | b112e71 |
+| WETH (mock)                 | - | [0x1567fDEa650b008B8c4e45122Da63d142EDfD8F8](https://hoodi.etherscan.io/address/0x1567fDEa650b008B8c4e45122Da63d142EDfD8F8) | b112e71 |
+| stETH (mock, shared)        | - | [0x3508A952176b3c15387C97BE809eaffB1982176a](https://hoodi.etherscan.io/address/0x3508A952176b3c15387C97BE809eaffB1982176a) | b112e71 |
+| MockAeraVault               | - | [0x66B7407c6B2991677a2fA9DF83DB41de5774d59c](https://hoodi.etherscan.io/address/0x66B7407c6B2991677a2fA9DF83DB41de5774d59c) | b112e71 |
+
+## Restaking
+
+| PufferModule Name |                                     PufferModule Address                                      |                                       EigenPod Address                                        | RestakingOperator Address <br/>(delegated to) |
+| :---------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------: |
+| `PUFFER_MODULE_0` | [0xDF11...115](https://hoodi.etherscan.io/address/0xDF116cf957A0ee938bA352c9A5EDd41CfF896115) | [0xFc00...740](https://hoodi.etherscan.io/address/0xFc00253A3D531281695061a88e277c38347Cf740) |                       -                       |
