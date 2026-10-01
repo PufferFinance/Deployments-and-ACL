@@ -174,10 +174,21 @@ Deployed **2026-09-22** as the pre-upgrade baseline for rehearsing the
 This is a **rehearsal fixture, not a normal testnet deployment**. Before relying on
 anything here, note:
 
-- Every role sits on the dev wallet `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`:
-  all three Timelock seats (community / operations / pauser), plus AccessManager
-  roles 0 (ADMIN), 1 (UPGRADER), 22, 23 and 77. Timelock `delay` is 604801, the
-  same as mainnet.
+- Nearly every role sits on the dev wallet `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`:
+  the Timelock community and pauser seats, plus AccessManager roles 0 (ADMIN),
+  1 (UPGRADER), 22, 23, 25, 26 and 77. Timelock `delay` is 604801, the same as
+  mainnet.
+- **The Timelock was replaced on 2026-09-24.** The original
+  (`0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9`) had
+  `COMMUNITY_MULTISIG == OPERATIONS_MULTISIG`, and `executeTransaction` tests the
+  operations seat first - so the ops branch shadowed the community branch and the
+  0-delay path was unreachable, leaving a mandatory 7-day queue for every change
+  (`MINIMUM_DELAY` is 7 days and `setDelay` is only callable by the Timelock
+  itself). The replacement uses `OPERATIONS_MULTISIG =
+  0xe1aDdd9fe591F8eCDAb6B0B67978DD1AEd025E8d`, distinct from the community seat.
+  Nothing else referenced the old Timelock - it was reachable only through
+  `ADMIN_ROLE` - so the swap was one deployment plus a grant and a revoke. The old
+  contract now holds no roles.
 - The deployer intentionally still holds `ADMIN_ROLE` and `ROLE_ID_UPGRADER`;
   revoking them is a later step of the rehearsal.
 - `EnclaveVerifier.FRESHNESS_BLOCKS` is **100000000**, deliberately past the chain
@@ -185,8 +196,10 @@ anything here, note:
   hardware. Testnet only - it makes attestations replayable forever.
 - stETH and WETH are mocks. WETH here is **not** the canonical Hoodi WETH: the
   vault's `_WETH` immutable points at the mock below.
-- `PauserContract` does not exist at this commit (it arrives with the upgrade), and
-  `PufferWithdrawalManager` has not been deployed yet.
+- `PauserContract` does not exist at this commit; it arrives with the upgrade.
+- The EigenPod's `proofSubmitter` is deliberately set to the paymaster EOA, to
+  mirror the ~92 mainnet pods that still list the leaked key. It is what the
+  upgrade's `ProofSubmitter` contract is meant to constrain.
 
 | Name                        | Proxy | Implementation | Commit hash |
 | --------------------------- | --- | --- | --- |
@@ -207,7 +220,9 @@ anything here, note:
 | OperationsCoordinator       | - | [0x65176a65BAD9687A13750b1dBaaA8adfb995Bd43](https://hoodi.etherscan.io/address/0x65176a65BAD9687A13750b1dBaaA8adfb995Bd43) | b112e71 |
 | PufferRevenueDepositor      | [0x9b08DF880B191FB33827Ee63cf859DD669376Eb4](https://hoodi.etherscan.io/address/0x9b08DF880B191FB33827Ee63cf859DD669376Eb4) | [0x94809aB3f3c1005925fE0115B9Dc32F5b1241d71](https://hoodi.etherscan.io/address/0x94809aB3f3c1005925fE0115B9Dc32F5b1241d71) | b112e71 |
 | AVSContractsRegistry        | - | [0xbE269146A8b887E3f2331ADbdC16f171Aa67c9Bd](https://hoodi.etherscan.io/address/0xbE269146A8b887E3f2331ADbdC16f171Aa67c9Bd) | b112e71 |
-| Timelock                    | - | [0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9](https://hoodi.etherscan.io/address/0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9) | b112e71 |
+| Timelock                    | - | [0x59a3E9A867c2F487Ba3ba1e03E0D3e87Ff190B4D](https://hoodi.etherscan.io/address/0x59a3E9A867c2F487Ba3ba1e03E0D3e87Ff190B4D) | b112e71 |
+| Timelock (decommissioned)   | - | [0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9](https://hoodi.etherscan.io/address/0xb16E6001d6703D13A5955b5F2B239bBACBbe22C9) | b112e71 |
+| PufferWithdrawalManager     | [0x8364D0193C478f8af3943Ae58A3e3311e3b73d96](https://hoodi.etherscan.io/address/0x8364D0193C478f8af3943Ae58A3e3311e3b73d96) | [0x67eF7D28e346A4Ceb3C3801d0B61F0bF5962C294](https://hoodi.etherscan.io/address/0x67eF7D28e346A4Ceb3C3801d0B61F0bF5962C294) | b112e71 |
 | ValidatorTicketPricer       | - | [0x12409Ab8E9Eca443093Df4fbB8b15CE99175E5a3](https://hoodi.etherscan.io/address/0x12409Ab8E9Eca443093Df4fbB8b15CE99175E5a3) | b112e71 |
 | WETH (mock)                 | - | [0x1567fDEa650b008B8c4e45122Da63d142EDfD8F8](https://hoodi.etherscan.io/address/0x1567fDEa650b008B8c4e45122Da63d142EDfD8F8) | b112e71 |
 | stETH (mock, shared)        | - | [0x3508A952176b3c15387C97BE809eaffB1982176a](https://hoodi.etherscan.io/address/0x3508A952176b3c15387C97BE809eaffB1982176a) | b112e71 |
