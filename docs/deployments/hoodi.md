@@ -233,3 +233,73 @@ anything here, note:
 | PufferModule Name |                                     PufferModule Address                                      |                                       EigenPod Address                                        | RestakingOperator Address <br/>(delegated to) |
 | :---------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------: |
 | `PUFFER_MODULE_0` | [0xDF11...115](https://hoodi.etherscan.io/address/0xDF116cf957A0ee938bA352c9A5EDd41CfF896115) | [0xFc00...740](https://hoodi.etherscan.io/address/0xFc00253A3D531281695061a88e277c38347Cf740) |                       -                       |
+
+# Hoodi Deployments - Automata TEE Stack (Puffer-owned)
+
+Deployed **2026-10-01** for the `audit/combined-2026-05` upgrade rehearsal: the new
+`GuardianModule` takes `SessionRegistry` and `WorkloadRegistry` as constructor immutables.
+Source: `automata-network/automata-tee-workload-measurement` tag
+`blocksec-20260909-final-audited` (`0e0991b`) for `src/`, deployed from branch
+`puffer/hoodi` at commit `021c753` (script-only changes: CREATE2 salts prefixed `PUFFER_HOODI_`).
+`DeployProd` from `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`, blocks 3730758-3730788. All 24 contracts are verified on Etherscan.
+
+This is **our own deployment of Automata's contracts, not Automata's Hoodi stack**
+(theirs is `SessionRegistry` `0xB247950fBBFCE245641e433AFd7d8884328CE5A1`, an older version).
+Before relying on anything here, note:
+
+- Every proxy is single-step `OwnableUpgradeable`, owned by the dev wallet
+  `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`. The owner can upgrade each proxy (UUPS) and change every setting below.
+  There is no timelock.
+- Base image and workload registration is **whitelist-gated**: `paused() == true` on
+  both registries means the whitelist is enforced, not that registration is stopped.
+  The whitelist is empty, so nothing is registered yet.
+- Session registration is permissionless once a workload exists.
+- The trusted AWS Nitro root certificate hash is a sentinel,
+  `keccak256("PUFFER_HOODI_AWS_NITRO_UNUSED")` =
+  `0xea49ca48801632d3101e8fd1989b4c6b01a0a12891967feaa22b4f4052a25e07`. Guardians run on
+  GCP Intel TDX, so the AWS path is unused and this hash trusts no real certificate.
+- `ZkVerifierRegistry` has the script's four default routes enabled (one program ID each
+  for Intel TDX DCAP, AMD SEV-SNP, TPM quote and AWS NitroTPM).
+- `KeyResolver` is deployed by the script but nothing in the stack reads it.
+
+| Name                          | Proxy | Implementation | Commit hash |
+| ----------------------------- | --- | --- | --- |
+| SessionRegistry               | [0xafbdf3e5f515f126C09EE5f01CF2B4e0E426b13A](https://hoodi.etherscan.io/address/0xafbdf3e5f515f126C09EE5f01CF2B4e0E426b13A) | [0x186F34034f0f7748Ba63653E61426Fcd24826e90](https://hoodi.etherscan.io/address/0x186F34034f0f7748Ba63653E61426Fcd24826e90) | 021c753 |
+| WorkloadRegistry              | [0xE4B77052e0F9839F95A9e49F531d568F17D260dB](https://hoodi.etherscan.io/address/0xE4B77052e0F9839F95A9e49F531d568F17D260dB) | [0x7a8Cb702bC86Da463dAbE452C128781002b20f71](https://hoodi.etherscan.io/address/0x7a8Cb702bC86Da463dAbE452C128781002b20f71) | 021c753 |
+| BaseImageRegistry             | [0x8C5b11Ff975e325417aED3A61Cb37F513F4f27e3](https://hoodi.etherscan.io/address/0x8C5b11Ff975e325417aED3A61Cb37F513F4f27e3) | [0xf585e1F897b268B98AE25BfAd268580169436383](https://hoodi.etherscan.io/address/0xf585e1F897b268B98AE25BfAd268580169436383) | 021c753 |
+| ZkVerifierRegistry            | [0x678F89EaE15B04d094f9c5BA64249F7A3571d7C8](https://hoodi.etherscan.io/address/0x678F89EaE15B04d094f9c5BA64249F7A3571d7C8) | [0x22d0De8754e34F9E987fCC44bfd4C0bC51ab3708](https://hoodi.etherscan.io/address/0x22d0De8754e34F9E987fCC44bfd4C0bC51ab3708) | 021c753 |
+| TpmVerifier                   | [0x58e3C61f1Fc3D8E48f50526C00B7D649bc30652A](https://hoodi.etherscan.io/address/0x58e3C61f1Fc3D8E48f50526C00B7D649bc30652A) | [0xfd81498A0efa7b3B3483447E5B38034C26f7cB81](https://hoodi.etherscan.io/address/0xfd81498A0efa7b3B3483447E5B38034C26f7cB81) | 021c753 |
+| MaaKeyRegistry                | [0x3cD89DFDb1Fd31715F8A0d9545037E5868657cfd](https://hoodi.etherscan.io/address/0x3cD89DFDb1Fd31715F8A0d9545037E5868657cfd) | [0xC309334947f87e8C59023578e502247890334beD](https://hoodi.etherscan.io/address/0xC309334947f87e8C59023578e502247890334beD) | 021c753 |
+| AmdSnpSecurityPolicyRegistry  | [0xfaF5c66947848Ff55FE35B1c37805D4922b8A3a2](https://hoodi.etherscan.io/address/0xfaF5c66947848Ff55FE35B1c37805D4922b8A3a2) | [0xe33E5A3622b944132fF9334670C024AC2cC15b52](https://hoodi.etherscan.io/address/0xe33E5A3622b944132fF9334670C024AC2cC15b52) | 021c753 |
+| KeyResolver (unused)          | [0xF11cAc2f9e5dfDE30c60CD2c3D5c5d205CB24BE9](https://hoodi.etherscan.io/address/0xF11cAc2f9e5dfDE30c60CD2c3D5c5d205CB24BE9) | [0x2f1b6CD50cA6448C0b48102724164165d4F15b24](https://hoodi.etherscan.io/address/0x2f1b6CD50cA6448C0b48102724164165d4F15b24) | 021c753 |
+| TeeVerifier                   | - | [0x64354B82b583FD64AB3bdAbF7Fec60bD1Ba730a0](https://hoodi.etherscan.io/address/0x64354B82b583FD64AB3bdAbF7Fec60bD1Ba730a0) | 021c753 |
+| SignatureVerifier             | - | [0xd6178BE89Be9157Ed3C7BbddCc9D292D203Fa1F7](https://hoodi.etherscan.io/address/0xd6178BE89Be9157Ed3C7BbddCc9D292D203Fa1F7) | 021c753 |
+| AkCollateralVerifier          | - | [0x48Ed6c005dE2FB1E849083AFe07D2b106b2ee3AE](https://hoodi.etherscan.io/address/0x48Ed6c005dE2FB1E849083AFe07D2b106b2ee3AE) | 021c753 |
+| TeeSecurityPolicyVerifier     | - | [0x50C58e08D57a8022dF10d0349B2AF962A9bb9e4A](https://hoodi.etherscan.io/address/0x50C58e08D57a8022dF10d0349B2AF962A9bb9e4A) | 021c753 |
+| IntelTdxDcapZkVerifierAdapter | - | [0xEd97EeD1d3Fb4FBe7b51F98344ed1161474847a1](https://hoodi.etherscan.io/address/0xEd97EeD1d3Fb4FBe7b51F98344ed1161474847a1) | 021c753 |
+| AmdSevSnpZkVerifierAdapter    | - | [0x6c6F023479DAc7ed10041B4fB3890C83c552c58e](https://hoodi.etherscan.io/address/0x6c6F023479DAc7ed10041B4fB3890C83c552c58e) | 021c753 |
+| TpmQuoteZkVerifierAdapter     | - | [0x316Ac0881ad9f166BE2E235c48fDb0264cBE787E](https://hoodi.etherscan.io/address/0x316Ac0881ad9f166BE2E235c48fDb0264cBE787E) | 021c753 |
+| AwsNitroTpmZkVerifierAdapter  | - | [0xA2843644C497172D8E56edcd24886F9d02cE0A88](https://hoodi.etherscan.io/address/0xA2843644C497172D8E56edcd24886F9d02cE0A88) | 021c753 |
+
+## Access control
+
+| Contract | Privilege | Holder |
+| --- | --- | --- |
+| All 8 proxies | `owner()`, UUPS upgrade | `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE` |
+| BaseImageRegistry, WorkloadRegistry | `addToWhitelist`, `removeFromWhitelist`, `pause`, `unpause` | owner |
+| ZkVerifierRegistry | `setZkProgramConfig` (routes any proof type to any adapter) | owner |
+| SessionRegistry | `setAwsNitroRootCertificateTrust`, AWS document age and clock skew | owner |
+| MaaKeyRegistry | `upsertMaaSigningKey`, `revokeMaaSigningKey` | owner |
+| AmdSnpSecurityPolicyRegistry | `updatePolicies` | owner |
+| TeeVerifier, SignatureVerifier, AkCollateralVerifier, TeeSecurityPolicyVerifier, ZK adapters | none (immutable) | - |
+
+## External dependencies (owned by Automata)
+
+These are trust roots we do not control. Our verifiers and adapters point at them.
+
+| Name | Address | Owner |
+| --- | --- | --- |
+| DCAP attestation | [0xaDdeC7e85c2182202b66E331f2a4A0bBB2cEEa1F](https://hoodi.etherscan.io/address/0xaDdeC7e85c2182202b66E331f2a4A0bBB2cEEa1F) | `0xDf841B239bE7a6b37366005107069b7410da4Ff9` |
+| SNP attestation | [0x89981202BDd1d19Cb5AfaFe74c847b87982b6B9C](https://hoodi.etherscan.io/address/0x89981202BDd1d19Cb5AfaFe74c847b87982b6B9C) | `0x3D089C2f2CB86d4EfDe153C81cAbD4579784430b` |
+| TPM attestation | [0x715e8A7B3E24C0a27dE09b6eaD7e13B2A797cf8B](https://hoodi.etherscan.io/address/0x715e8A7B3E24C0a27dE09b6eaD7e13B2A797cf8B) | `0x31889403c29B052217F6591c707Eb813a00735B1` |
+| SP1 verifier | [0x7DA83eC4af493081500Ecd36d1a72c23F8fc2abd](https://hoodi.etherscan.io/address/0x7DA83eC4af493081500Ecd36d1a72c23F8fc2abd) | `0xBaB2c2aF5b91695e65955DA60d63aD1b2aE81126` |
