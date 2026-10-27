@@ -303,3 +303,43 @@ These are trust roots we do not control. Our verifiers and adapters point at the
 | SNP attestation | [0x89981202BDd1d19Cb5AfaFe74c847b87982b6B9C](https://hoodi.etherscan.io/address/0x89981202BDd1d19Cb5AfaFe74c847b87982b6B9C) | `0x3D089C2f2CB86d4EfDe153C81cAbD4579784430b` |
 | TPM attestation | [0x715e8A7B3E24C0a27dE09b6eaD7e13B2A797cf8B](https://hoodi.etherscan.io/address/0x715e8A7B3E24C0a27dE09b6eaD7e13B2A797cf8B) | `0x31889403c29B052217F6591c707Eb813a00735B1` |
 | SP1 verifier | [0x7DA83eC4af493081500Ecd36d1a72c23F8fc2abd](https://hoodi.etherscan.io/address/0x7DA83eC4af493081500Ecd36d1a72c23F8fc2abd) | `0xBaB2c2aF5b91695e65955DA60d63aD1b2aE81126` |
+
+# Hoodi Deployments - GuardianModule on Automata's shared TEE registries
+
+Deployed **2026-10-16** for the `audit/combined-2026-05` upgrade rehearsal. Source:
+`puffer-contracts-updates-private` branch `feat/atakit-prefix-oracle-migration` at `f8cbcce`
+(`audit/combined-2026-05` plus two changes: `rotateGuardianKey` hashes the message with atakit's
+`ATAKIT_SESSION_SIGN_V1` prefix, and `PufferOracleV2.migrateFromOracle`). That branch is not pushed yet.
+`DeployGuardians` from `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`, block 3827103,
+tx `0x24388696b159a33a992b79488cf562c2353a0c0670e2704d7904582db80ffcb3`. Verified on Etherscan.
+
+Before relying on it, note:
+
+- It points at **Automata's shared Hoodi registries**, not the Puffer-owned stack above. Those
+  registries are owned by Automata (`0x74EFE41c9a9E88FB0A32b03777DD89a1d70c424d`), and their
+  code is newer than the BlockSec-audited tag `blocksec-20260909-final-audited`.
+- It is **not wired into the protocol yet**: the rehearsal baseline still uses its own GuardianModule.
+- No guardian enclave key is registered yet (`getGuardiansEnclavePubkeys()` returns `[0x]`), and
+  no workload is allowed. Both come from the guardian CVM's `rotateGuardianKey`.
+- The guardian EOA is also the guardian's atakit owner key and reef's wallet (one key).
+
+| Name | Address | Commit hash |
+| --- | --- | --- |
+| GuardianModule | [0x63cA1845543d55FDCDd4a5048775705B62FBf8dE](https://hoodi.etherscan.io/address/0x63cA1845543d55FDCDd4a5048775705B62FBf8dE) | f8cbcce |
+
+| Parameter | Value |
+| --- | --- |
+| `SESSION_REGISTRY` | [0x7575BceC155b272077C87aD3Ae5Ef54Cf9DC6601](https://hoodi.etherscan.io/address/0x7575BceC155b272077C87aD3Ae5Ef54Cf9DC6601) (Automata) |
+| `WORKLOAD_REGISTRY` | [0x3a2E3D05cAAb7261e97F27ceDdffFbC9eEEe6b0D](https://hoodi.etherscan.io/address/0x3a2E3D05cAAb7261e97F27ceDdffFbC9eEEe6b0D) (Automata) |
+| `FRESHNESS_BLOCKS` | 300 (about 1 hour) |
+| `authority()` | `0xD6565BcCdecCe3906c9Bc744d61A78040Ad3493C` (rehearsal baseline AccessManager) |
+| Guardians / threshold | `[0x621D9707FBD42b95d7eB08bbe6498a9143dB1eD8]` / 1 |
+| Allowed token | `0xfD542fDC42F1BF271d94805eBb9f2a8b45E977fc` (pufETH vault) |
+
+## Access control
+
+No target function roles are set on the new module, so every `restricted` function
+(`setAllowedWorkload`, `addGuardian`, `removeGuardian`, `setThreshold`, `revokeGuardianEnclave`,
+`setEjectionThreshold`, token allowlist) requires AccessManager `ADMIN_ROLE` (0), held by the dev
+wallet `0xeeE554b5b2bF5FBc9730Ce33c6dc92828DA01BeE`. `rotateGuardianKey` is permissionless; it
+checks the session proof instead.
